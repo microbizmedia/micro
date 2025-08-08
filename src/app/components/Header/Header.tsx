@@ -60,18 +60,21 @@ const Header = () => {
           {/* price button */}
 
           <div className='flex items-center '>
-            <Link href="/web/services#target-pricing" className=' py-[20.5px] px-[36px] ml-[50px] border-none 
-             bg-[#746eb8] after:bg-violet-600  lg:inline-block'>
-              Pricing
-            </Link>
 
+            <Link href="/web/services#target-pricing" >
+              <button className=' py-[20.5px] px-[36px] ml-[50px] border-none 
+             bg-[#746eb8] after:bg-violet-600  lg:inline-block' aria-label='Link to price packages' >
+                Pricing
+              </button>
+            </Link>
 
             {/* Responsive Off-canvas Menu Button */}
             <div className='block lg:hidden'>
-              <button onClick={() => setMobileMenu(true)} className={`mobile-menu-trigger `} >
+              <button onClick={() => setMobileMenu(true)} className={`mobile-menu-trigger ` } aria-label='Dropdown menu'>
                 <span />
               </button>
             </div>
+
           </div>
 
 
