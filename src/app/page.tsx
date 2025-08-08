@@ -59,7 +59,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <Image
-            aria-hidden
+            aria-hidden 
             src="/file.svg"
             alt="File icon"
             width={16}
