@@ -1,7 +1,8 @@
 'use client'
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import Navbar from '@/app/components/Nav/Nav';
+import Image from 'next/image';
 
 const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -33,19 +34,23 @@ const Header = () => {
 
 
           {/* Header Logo */}
-          <Link href='/web/'>
-            <img
-              className='hidden lg:block'
-              src='/logo_standard.png'
-              alt='Logo desktop'
-              width='135'
-              height='24'
-            />
-            <img
-              className='block lg:hidden'
-              src='logo_mobile.png'
-              alt='Logo mobile'
-            />
+          <Link href="/web/">
+            <picture>
+              {/* Mobile image */}
+              <source
+                srcSet="/logo_mobile.png"
+                media="(max-width: 1023px)"
+              />
+              {/* Desktop image */}
+              <Image
+                src="/logo_standard.png"
+                alt="Logo"
+                height={65}
+                width={65}
+                className='lg:w-[135px]'
+                priority
+              />
+            </picture>
           </Link>
 
           <Navbar
@@ -53,7 +58,7 @@ const Header = () => {
             setMobileMenu={setMobileMenu}
           />
           {/* price button */}
-          
+
           <div className='flex items-center '>
             <Link href="/web/services#target-pricing" className=' py-[20.5px] px-[36px] ml-[50px] border-none 
              bg-[#746eb8] after:bg-violet-600  lg:inline-block'>

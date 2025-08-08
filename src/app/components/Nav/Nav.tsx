@@ -6,8 +6,11 @@ import './menu.css'
 // import instagramIcon from '../footer/social_media_icons/instagram_icon_b.png'
 
 
-// eslint-disable-next-line react/prop-types
-const Navbar = ({ mobileMenu, setMobileMenu }: any) => {
+type NavbarProps = {
+  mobileMenu: boolean;
+  setMobileMenu: React.Dispatch<React.SetStateAction<boolean>>;
+};
+const Navbar =  ({ mobileMenu, setMobileMenu }: NavbarProps) => {
     const [mobileSubMenu, setMobileSubMenu] = useState('');
 
     const handleMenu = () => {
