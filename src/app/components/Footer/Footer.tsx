@@ -10,7 +10,7 @@ const Footer = () => {
     <>
       {showRoutes.includes(pathname) ? (
         <div className='global-container relative jos text-center pt-4 mb-8 md:mb-12  z-40'>
-          <h2 className=' pb-6'>Let's Start Your Story</h2>
+          <h2 className='pb-6'>Let&apos;s Start Your Story</h2>
           <Link href='contact' className='button-micro  hover:border-violet-400' >
             Start A Free Consultation
           </Link>
