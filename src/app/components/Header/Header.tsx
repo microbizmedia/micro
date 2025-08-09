@@ -26,56 +26,38 @@ const Header = () => {
   // }, []);
 
   return (
-    <header className='site-header z-50' id='sticky-menu' >
-      <div className=' max-w-full m-auto lg:pl-[36px]  '>
-        <div className='flex items-center justify-between h-[65px]'>
+    <header className='site-header z-50 flex items-center justify-between h-[65px] max-w-full m-auto lg:pl-[36px]' id='sticky-menu' >
 
-
-
-
-          {/* Header Logo */}
-          <Link href="/web/">
-            <picture>
-              {/* Mobile image */}
-              <source
-                srcSet="/logo_mobile.png"
-                media="(max-width: 1023px)"
-              />
-              {/* Desktop image */}
-              <Image
-                src="/logo_standard.png"
-                alt="Logo"
-                height={65}
-                width={65}
-                className='lg:w-[135px]'
-                priority
-              />
-            </picture>
-          </Link>
-
-          <Navbar
-            mobileMenu={mobileMenu}
-            setMobileMenu={setMobileMenu}
+      {/* Header Logo */}
+      <Link href="/web/">
+        <picture>
+          <source srcSet="/logo_mobile.svg" media="(max-width: 1023px)" />
+          <Image
+            src="/logo_standard.svg"
+            alt="Logo"
+            height={65}
+            width={65}
+            className='lg:w-[135px]'
+            priority
           />
-          {/* price button */}
+        </picture>
+      </Link>
 
-          <div className='flex items-center '>
+      <Navbar
+        mobileMenu={mobileMenu}
+        setMobileMenu={setMobileMenu}
+      />
+      {/* price button */}
 
-            <Link href="/web/services#target-pricing" className=' py-[20.5px] px-[36px] ml-[50px] border-none 
+      <div className='flex items-center '>
+        <Link href="/web/services#target-pricing" className=' py-[20.5px] px-[36px] ml-[50px] border-none 
              bg-[#746eb8] after:bg-violet-600  lg:inline-block' aria-label='Link to price packages'  >
-              Pricing
-            </Link>
-
-            {/* Responsive Off-canvas Menu Button */}
-            <button onClick={() => setMobileMenu(true)} className='mobile-menu-trigger block lg:hidden' aria-label='Dropdown menu'>
-              <span />
-            </button>
-
-          </div>
-
-
-
-        </div>
+          Pricing
+        </Link>
+        {/* Responsive Off-canvas Menu Button */}
+        <button onClick={() => setMobileMenu(true)} className='mobile-menu-trigger block lg:hidden' aria-label='Dropdown menu'>
+          <span />
+        </button>
       </div>
     </header>
   );

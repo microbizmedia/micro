@@ -1,4 +1,4 @@
-.container {
+/* .container {
   width: 100%;
 }
 
@@ -30,13 +30,14 @@
   .container {
     max-width: 1400px;
   }
-}
+} */
 
  .button {
   position: relative;
   z-index: 1;
   display: inline-flex;
-  background-color: #746eb8;
+  background-color: #ffffff;
+  color: #0c1015;
   overflow: hidden;
   border-width: 1px;
   padding-left: 30px;
@@ -105,15 +106,13 @@
     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-/* Main Wrapper */
 
-.main-wrapper {
-  overflow: hidden;
-}
 
 .global-container {
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  overflow: hidden;
   max-width: 1024px;
   padding-left: 0.6rem;
   padding-right: 0.6rem;
