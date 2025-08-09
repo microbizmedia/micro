@@ -4,16 +4,8 @@ import Image from 'next/image';
 import { usePathname } from "next/navigation";
 
 const Footer = () => {
-  const gitHubUrl = '/web/';
   const pathname = usePathname();
-  const showRoutes = [
-    gitHubUrl,
-    '/',
-    gitHubUrl + "work",
-    gitHubUrl + "services",
-    gitHubUrl + "process",
-    gitHubUrl + "about",
-  ];
+  const showRoutes = ['/', "work", "services", "process", "about", ];
   return (
     <>
       {showRoutes.includes(pathname) ? (
@@ -60,7 +52,6 @@ const Footer = () => {
                 Menu
               </h4>
               <ul className='flex flex-col  gap-y-3 text-[18px]'>
-                {/* <li> <HashLink to={gitHubUrl + 'services#target-pricing'}> Pricing </HashLink> </li> */}
                 <li><Link href='work' > Work</Link> </li>
                 <li><Link href='services' >Services </Link></li>
                 <li><Link href='process' > Process</Link></li>
@@ -74,7 +65,6 @@ const Footer = () => {
                 Legal
               </h4>
               <ul className='flex flex-col gap-y-3 text-[18px]'>
-                {/* <li><Link to={gitHubUrl + 'FAQ'} >&nbsp;</Link></li> */}
                 <li><Link href='FAQ' > FAQ </Link></li>
                 <li> <Link href='affiliate' > Affilliate Program </Link> </li>
                 <li><Link href='contact'> Customer Service</Link> </li>
