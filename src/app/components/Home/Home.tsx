@@ -1,13 +1,8 @@
-import Link from 'next/link';
-import emailUsIcon from '../../assets/icon_images/email_us_icon.png'
-import TextAndPictureWindow from '@/app/components/constants/text-video-window'
 import TitleMessage from '@/app/components/constants/title-message';
 import ServicesIcons from '@/app/components/constants/services-icons';
 import TextVideoWindow from '@/app/components/constants/text-video-window';
-import ourStoryImg from "../../assets/img/our-story-image.jpg"
+
 const Hero = () => {
-
-
   return (
     <>
       {/*...::: Hero Section Start  :::... */}

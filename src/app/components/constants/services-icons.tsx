@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import CardIcon from './services-icon'
-const servicesIcons = ({ title }: { title: string }) => {
+const ServicesIcons = ({ title }: { title: string }) => {
 
 
   const [isExpanded, setIsExpanded] = useState(false);
@@ -60,4 +60,4 @@ const servicesIcons = ({ title }: { title: string }) => {
   );
 };
 
-export default servicesIcons;
+export default ServicesIcons;
