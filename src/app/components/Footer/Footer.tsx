@@ -51,7 +51,7 @@ const Footer = () => {
               <h4 className='text-[26px] text-bold capitalize'>
                 Menu
               </h4>
-              <ul className='flex flex-col  gap-y-3 text-[18px]'>
+              <ul className='flex flex-col  gap-y-3'>
                 <li><Link href='work' > Work</Link> </li>
                 <li><Link href='services' >Services </Link></li>
                 <li><Link href='process' > Process</Link></li>
@@ -64,7 +64,7 @@ const Footer = () => {
               <h4 className='text-[26px] text-bold capitalize '>
                 Legal
               </h4>
-              <ul className='flex flex-col gap-y-3 text-[18px]'>
+              <ul className='flex flex-col gap-y-3'>
                 <li><Link href='FAQ' > FAQ </Link></li>
                 <li> <Link href='affiliate' > Affilliate Program </Link> </li>
                 <li><Link href='contact'> Customer Service</Link> </li>

@@ -2,6 +2,7 @@ import TitleMessage from '@/app/components/constants/title-message';
 import ServicesIcons from '@/app/components/constants/services-icons';
 import TextVideoWindow from '@/app/components/constants/text-video-window';
 
+import Link from 'next/link'
 const Hero = () => {
   return (
     <>
@@ -13,62 +14,62 @@ const Hero = () => {
         <div className='purple-gradient-angle z-0  absolute right-[10%] top-[10vh] lg:right-[10%] lg:top-[40vh] xxl:right-[18%] xxl:top-[30vh]   h-[40%] w-[55%] rounded-[40px] -rotate-[0.022deg] '></div>
       </div>
 
-        <div className='global-container relative z-20'>
-          <section id='section-hero' >
+      <div className='global-container relative z-20' id='section-home'>
 
-
-
-            <TitleMessage
-              header='Your Digital Agency'
-              paragraph='Take full control of your potential through our expert levels of design,
+        <TitleMessage
+          header='Your Digital Agency'
+          paragraph='Take full control of your potential through our expert levels of design,
                 development and marketing for your brand and business.'
-              className='sub-title max-w-[600px] m-auto'
-            />
+          className='sub-title max-w-[600px] m-auto'
+        />
+        <TextVideoWindow
+          header="Browse Our Catalog"
+          paragraph='View some of the amazing work we already made for our existing partners.'
+          button="See More"
+        />
+        <ServicesIcons
+          title="What We Offer" />
 
-            <TextVideoWindow
-              header="Browse Our Catalog"
-              paragraph='View some of the amazing work we already made for our existing partners.'
-              button="See More"
-            />
-
-            <ServicesIcons
-              title="What We Offer" />
-
-          </section>
-          {/*...::: Hero Section End :::... */}
-
-          {/*...::: Consultation window Section start :::... */}
-          {/* <section id='consultation-window-section' >
-            <div
-              className='jos hHelloero-img overflow-hidden rounded-[40px]  bg-gradient-to-t from-colorBackground to-colorPurple  max-w-[1024px] 
+        <div id='consultation-window-section'
+          className='jos overflow-hidden rounded-[40px]  bg-gradient-to-t from-[#0c1015] to-[#746eb8] max-w-[1024px] 
               flex flex-col-reverse mx-auto lg:flex-row mb-6 lg:mb-16 pt-16 pb-4  lg:p-0'
-            >
-              <div className='flex flex-col justify-center   px-8 py-10 lg:pl-[76px] lg:max-w-[50%]'>
-                <h2>Our consultations are always free</h2>
-                <p className='lg:mt-6 lg:mb-10 mt-4 mb-8 text-base '>Give us an email and one of our agents will contact you as soon as we can.</p>
-                <Link to='/web/contact' className='button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md'>Free Consultation &#x27a4;  </Link>
-              </div>
-              <a href="mailto:info@microbizmedia.com?subject=General Inquiry&body=Hello,%0D%0A%0D%0AI have a question regarding your services. Here are the details:%0D%0A%0D%0A[Please describe your concern here]%0D%0A%0D%0AThank you." target="_blank"
-                className=' relative  flex justify-center items-center lg:right-[40px]'>
-                <img
-                  src={emailUsIcon}
-                  alt='letter-image'
-                  className='animate-float  size-5/12'
-                />
-              </a>
-            </div>
-
-            <TextAndPictureWindow
-              header="Our Story"
-              paragraph='Read more about us and what inspired us to do what we do for you.'
-              aditionalClassName="scale-x-[-1] lg:pr-0 lg:pl-20"
-              image={ourStoryImg}
-              button='Learn More'
-              link='/web/about'
+        >
+          <div className='flex flex-col justify-center px-8 py-10 lg:pl-[76px] lg:max-w-[50%]'>
+            <h2>Our consultations are always free</h2>
+            <p className='lg:mt-6 lg:mb-10 mt-4 mb-8 text-base '>Give us an email and one of our agents will contact you as soon as we can.</p>
+            <Link href='contact' className='button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md'>Free Consultation &#x27a4;  </Link>
+          </div>
+          <a href="mailto:info@microbizmedia.com?subject=General Inquiry&body=Hello,%0D%0A%0D%0AI have a question regarding your services. Here are the details:%0D%0A%0D%0A[Please describe your concern here]%0D%0A%0D%0AThank you." target="_blank"
+            className=' relative  flex justify-center items-center lg:right-[40px]'>
+            <img
+              src='/icon_images/email_us_icon.png'
+              alt='letter-image'
+              className='float-animation  size-5/12'
             />
-          </section> */}
-          {/*...::: Consultation window Section end :::... */}
+          </a>
         </div>
+
+        <div
+          className='jos hero-img overflow-hidden rounded-2xl  border-[12px]   flex flex-col-reverse
+            mx-auto max-w-[1024px] lg:flex-row mb-8 lg:mb-12 lg:h-[350px]'
+          style={{ borderColor: 'rgba(255,255,255,0.15)' }}
+          data-jos_animation='zoom' >
+
+          <div className='flex flex-col justify-center flex-1 py-6 px-3 lg:pl-16  bg-[#0c1015]'>
+            <h2>Our Story</h2>
+            <p className='lg:mt-6 lg:mb-10 mt-4 mb-4 lg:mr-20'>Read more about us and what inspired us to do what we do for you.</p>
+            <Link href='about' target="_blank" rel="noopener noreferrer"
+              className='button inline-block lg:self-start rounded-md ' >
+              Learn More &#x27a4; </Link>
+          </div>
+
+          <div className=' overflow-hidden flex-1 bg-[#0c1015]'>
+            <img   src='/our-story-image.jpg'  alt='hero-dashboard' className=' scale-x-[-1] lg:pl-20 object-cover object-center ' />
+          </div>
+
+        </div>
+
+      </div>
 
     </>
   );
