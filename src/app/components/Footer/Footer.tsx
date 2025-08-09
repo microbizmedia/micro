@@ -3,7 +3,7 @@ import Link  from 'next/link';
 import Image from 'next/image';
 import { usePathname } from "next/navigation";
 
-const Footer_01 = () => {
+const Footer = () => {
   const gitHubUrl = '/web/';
   const pathname = usePathname();
   const showRoutes = [
@@ -123,4 +123,4 @@ const Footer_01 = () => {
   );
 };
 
-export default Footer_01;
+export default Footer;

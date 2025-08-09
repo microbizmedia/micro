@@ -29,19 +29,19 @@ const Header = () => {
     <header className='site-header z-50 flex items-center justify-between h-[65px] max-w-full m-auto lg:pl-[36px]' id='sticky-menu' >
 
       {/* Header Logo */}
-      <Link href="/web/">
-        <picture>
-          <source srcSet="/logo_mobile.svg" media="(max-width: 1023px)" />
-          <Image
-            src="/logo_standard.svg"
-            alt="Logo"
-            height={65}
-            width={65}
-            className='lg:w-[135px]'
-            priority
-          />
-        </picture>
-      </Link>
+     <Link href="/" className="block">
+      <picture>
+        <source srcSet="/logo_mobile.svg" media="(max-width: 1023px)" />
+        <Image
+          src="/logo_standard.svg"
+          alt="Logo"
+          width={135}
+          height={65}
+          className="h-auto w-[65px] lg:w-[135px]"
+          priority
+        />
+      </picture>
+    </Link>
 
       <Navbar
         mobileMenu={mobileMenu}
