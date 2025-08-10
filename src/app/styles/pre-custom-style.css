@@ -20,6 +20,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
   border-radius: 5px;
+  font-weight: 600;
+  opacity: 0.9;
 }
 
 .button-micro {
@@ -41,6 +43,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
   border-radius: 10px;
+  font-weight: 600;
+  opacity: 0.9;
 }
 
 .button-micro:before {
@@ -72,6 +76,10 @@
   content: var(--tw-content);
   --tw-scale-y: 1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.sub-title{
+  font-weight: 200;
+  opacity: 0.7;
 }
 
 

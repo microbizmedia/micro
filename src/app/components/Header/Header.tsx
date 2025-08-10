@@ -49,8 +49,8 @@ const Header = () => {
       {/* price button */}
 
       <div className='flex items-center '>
-        <Link href="/web/services#target-pricing" className=' py-[20.5px] px-[36px] ml-[50px] border-none 
-             bg-[#746eb8] after:bg-violet-600  lg:inline-block' aria-label='Link to price packages'  >
+        <Link href="/web/services#target-pricing" className=' py-[20.5px] px-[36px] ml-[50px] font-semibold opacity-[0.9]
+             bg-[#746eb8]' aria-label='Link to price packages'  >
           Pricing
         </Link>
         {/* Responsive Off-canvas Menu Button */}
