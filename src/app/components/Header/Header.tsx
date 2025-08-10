@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Navbar from '@/app/components/Nav/Nav';
 import Image from 'next/image';
+import Logo from '@/app/components/Header/logo'
 
 const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -30,17 +31,15 @@ const Header = () => {
 
       {/* Header Logo */}
      <Link href="/" className="block">
-      <picture>
-        <source srcSet="/logo_mobile.svg" media="(max-width: 1023px)" />
         <Image
           src="/logo_standard.svg"
           alt="Logo"
           width={135}
           height={65}
-          className="h-auto w-[65px] lg:w-[135px]"
+          className="h-auto w-[65px] lg:w-[135px] hidden lg:block"
           priority
         />
-      </picture>
+      <Logo/>
     </Link>
 
       <Navbar
