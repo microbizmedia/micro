@@ -7,7 +7,6 @@ import Header from '@/app/components/Header/Header';
 import Footer from '@/app/components/Footer/Footer'
 import PrivacyPupup from "@/app/components/common/PrivacyPupupBar";
 
-import JOSProvider from '@/app/hooks/JOSProvider'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,7 +35,7 @@ export default function RootLayout({
       >
         <Header />
         <PrivacyPupup />
-         <JOSProvider />
+
         {children}
         <SpeedInsights />
         <Footer />
