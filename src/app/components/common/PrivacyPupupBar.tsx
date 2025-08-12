@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 const PrivacyPupup = () => {
     const [currentDate, setCurrentDate] = useState('');
-
     const [showPopup, setShowPopup] = useState(false);
-
     useEffect(() => {
         // Check if terms have been previously accepted or declined
         const hasAcceptedTerms = localStorage.getItem('termsAccepted');
@@ -23,8 +21,6 @@ const PrivacyPupup = () => {
         localStorage.setItem('termsAccepted', 'false'); // Save decline in localStorage
         setShowPopup(false); // Hide the popup
     };
-
-    // if (!showPopup) return null; // Don't render if the popup is hidden
 
     useEffect(() => {
         const today = new Date();
@@ -60,7 +56,7 @@ const PrivacyPupup = () => {
                         <div className='flex flex-wrap gap-4 justify-end'>
                             <Link
                                 onClick={handleDecline}
-                                to='/web/privacy'
+                                href='privacy'
                                 className="button flex  justify-center rounded-md bg-colorWhite border-none text-colorBackground w-full md:w-auto text-center "
                             >
                                 Read Privacy Policy
