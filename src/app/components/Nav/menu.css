@@ -1,48 +1,19 @@
-.site-header {
-  background-color: #0c1015;
-
-}
-
 .site-menu-main {
   display: flex;
-  flex-direction: row;
-  /* font-size: 18px; */
+  column-gap: 60px;
   text-align: center;
 }
-
-@media (width < 992px) {
+@media (max-width: 991px) {
   .site-menu-main {
     flex-direction: column;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 20px;
   }
-}
-
-@media (min-width: 992px) {
-  .site-menu-main {
-    column-gap: 60px;
-    flex-direction: row;
-  }
-}
-
-
-
-.mobile-menu-head,
-.mobile-menu-trigger {
-  display: none;
-}
-
-/*responsive*/
-@media (max-width: 991px) {
   .mobile-menu-trigger {
-    display: flex;
-    padding: 20px;
+    padding: 24px;
     cursor: pointer;
-    align-items: center;
-    justify-content: center;
   }
-
   .mobile-menu-trigger span {
     display: block;
     margin-top: 12px;
@@ -51,7 +22,6 @@
     width: 35px;
     position: relative;
   }
-
   .mobile-menu-trigger span:before {
     content: "";
     position: absolute;
@@ -61,11 +31,6 @@
     background-color: #ffffff;
     top: -12px;
   }
-
-  .item-right {
-    align-items: center;
-  }
-
   .menu-block {
     position: fixed;
     display: flex;
@@ -75,44 +40,32 @@
     background-color: #0c1015;
     left: 0;
     top: 0;
-    height: auto;
     overflow: hidden;
     transform: translateY(-100%);
     transition: all 0.5s ease;
     z-index: 1099;
   }
-
   .menu-block.active {
     transform: translateY(0%);
     border-radius: 0px 0px 40px 40px;
   }
-
   .site-menu-main>li>a {
     line-height: 50px;
     height: 50px;
     display: block;
   }
-
-
-  .menu-block .mobile-menu-head {
+  .mobile-menu-head {
     display: flex;
     height: 65px;
     align-items: center;
     justify-content: center;
   }
-
-
-  .menu-block .mobile-menu-head .mobile-menu-close {
-    height: 50px;
-    width: 50px;
-    border-left: 1px solid rgba(0, 0, 0, 0.1);
+ .mobile-menu-head .mobile-menu-close {
     cursor: pointer;
-    line-height: 50px;
     text-align: center;
-    /* color: #ffffff; */
     font-size: 30px;
+    padding: 20px;
   }
-
   .menu-overlay {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
@@ -125,13 +78,11 @@
     opacity: 0;
     transition: all 0.5s ease;
   }
-
   .menu-overlay.active {
     visibility: visible;
     opacity: 1;
   }
 }
-
 /* code after the template */
 .dropdown-menu-social-media-icons {
   display: flex;
@@ -143,9 +94,7 @@
   margin-left: 30px;
   border-top: 1px solid rgba(171, 174, 183, 0.22);
   border-bottom: 1px solid rgba(171, 174, 183, 0.22);
-
 }
-
 @media (min-width: 992px) {
   .dropdown-menu-social-media-icons {
     display: none;

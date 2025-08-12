@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import './menu.css'
 // import threadsIcon from '../footer/social_media_icons/threads_icon.png'
@@ -7,10 +7,10 @@ import './menu.css'
 
 
 type NavbarProps = {
-  mobileMenu: boolean;
-  setMobileMenu: React.Dispatch<React.SetStateAction<boolean>>;
+    mobileMenu: boolean;
+    setMobileMenu: React.Dispatch<React.SetStateAction<boolean>>;
 };
-const Navbar =  ({ mobileMenu, setMobileMenu }: NavbarProps) => {
+const Navbar = ({ mobileMenu, setMobileMenu }: NavbarProps) => {
     const [mobileSubMenu, setMobileSubMenu] = useState('');
 
     const handleMenu = () => {
@@ -19,28 +19,20 @@ const Navbar =  ({ mobileMenu, setMobileMenu }: NavbarProps) => {
     };
 
     return (
-        <div className='menu-block-wrapper'>
+        <>
 
-            <div onClick={handleMenu} className={`menu-overlay ${mobileMenu && 'active'}`} />
+
+            <div onClick={handleMenu} className={`lg:hidden menu-overlay ${mobileMenu && 'active'}`} />
+
 
             <nav className={`menu-block ${mobileMenu && 'active'}`} id='append-menu-header'  >
 
                 <ul className={`site-menu-main`}>
-                    <li onClick={handleMenu} className='nav-item' >
-                        <Link href='' className='nav-link-item '>   Our Work  </Link>
-                    </li>
-                    <li onClick={handleMenu} className='nav-item'>
-                        <Link href='' className='nav-link-item '>  Services  </Link>
-                    </li>
-                    <li onClick={handleMenu} className='nav-item' >
-                        <Link href='' className='nav-link-item'>    Process </Link>
-                    </li>
-                    <li onClick={handleMenu} className='nav-item ' >
-                        <Link href='' className='nav-link-item '>     Careers  </Link>
-                    </li>
-                    <li className='nav-item' onClick={handleMenu}   >
-                        <Link href='' className='nav-link-item '>   About Us </Link>
-                    </li>
+                    <li onClick={handleMenu}  > <Link href='work' className='nav-link-item '> Our Work</Link> </li>
+                    <li onClick={handleMenu} > <Link href='' className='nav-link-item '>Services </Link></li>
+                    <li onClick={handleMenu}  > <Link href='' className='nav-link-item'> Process </Link></li>
+                    <li onClick={handleMenu} > <Link href='' className='nav-link-item '>Careers</Link>  </li>
+                    <li onClick={handleMenu} > <Link href='' className='nav-link-item '> About Us </Link>  </li>
                 </ul>
 
                 {/* <div className='dropdown-menu-social-media-icons'>
@@ -67,7 +59,7 @@ const Navbar =  ({ mobileMenu, setMobileMenu }: NavbarProps) => {
                 </div>
 
             </nav>
-        </div>
+        </>
     );
 };
 

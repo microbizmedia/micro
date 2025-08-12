@@ -27,16 +27,15 @@ const Header = () => {
   // }, []);
 
   return (
-    <header className='site-header z-50 flex items-center justify-between h-[65px] max-w-full m-auto lg:pl-[36px]' id='sticky-menu' >
+    <header className=' z-50 flex items-center justify-between h-[65px]'>
 
-      {/* Header Logo */}
-     <Link href="/" className="block">
+     <Link href="/">
         <Image
           src="/logo_standard.svg"
           alt="Logo"
           width={135}
           height={65}
-          className="h-auto w-[65px] lg:w-[135px] hidden lg:block"
+          className="h-auto w-[126px] hidden lg:block ml-[36px]"
           priority
         />
       <Logo/>
@@ -46,15 +45,15 @@ const Header = () => {
         mobileMenu={mobileMenu}
         setMobileMenu={setMobileMenu}
       />
-      {/* price button */}
+    
 
-      <div className='flex items-center '>
-        <Link href="/web/services#target-pricing" className=' py-[20.5px] px-[36px] ml-[50px] font-semibold opacity-[0.9]
+      <div className='flex'>
+        <Link href="/web/services#target-pricing" className=' py-[20.5px] px-[36px]  font-semibold opacity-[0.9]
              bg-[#746eb8]' aria-label='Link to price packages'  >
           Pricing
         </Link>
         {/* Responsive Off-canvas Menu Button */}
-        <button onClick={() => setMobileMenu(true)} className='mobile-menu-trigger block lg:hidden' aria-label='Dropdown menu'>
+        <button onClick={() => setMobileMenu(true)} className='mobile-menu-trigger' aria-label='Dropdown menu'>
           <span />
         </button>
       </div>
