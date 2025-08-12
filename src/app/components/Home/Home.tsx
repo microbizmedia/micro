@@ -1,25 +1,17 @@
 import TitleMessage from '@/app/components/constants/title-message';
 import ServicesIcons from '@/app/components/constants/services-icons';
 import TextVideoWindow from '@/app/components/constants/text-video-window';
-import Image from 'next/image'
 import Link from 'next/link'
 const Hero = () => {
   return (
     <>
       {/*...::: Hero Section Start  :::... */}
-      {/* <div className='absolute insert-0 w-full z-0 overflow-hidden h-[200vh]'>
+      <div className='absolute insert-0 w-full z-0 overflow-hidden h-[200vh]'>
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#240454] to-colorBackground h-[200vh] w-full"></div>
         <div className='blue-gradient-1 z-0  absolute -left-[0%] top-[-10vh]  h-[100vh] w-[30%] rounded-[0] -rotate-[15.022deg] '></div>
         <div className='puple-light-gradient-3 z-0  absolute right-[0%] top-[10vh]  h-[30%] w-[45%] rounded-[400px] -rotate-[6.022deg] '></div>
         <div className='purple-gradient-angle z-0  absolute right-[10%] top-[10vh] lg:right-[10%] lg:top-[40vh] xxl:right-[18%] xxl:top-[30vh]   h-[40%] w-[55%] rounded-[40px] -rotate-[0.022deg] '></div>
-      </div> */}
-      <Image
-        src='/Hero_04.jpg'
-        alt='Hero purple blue blur cover'
-        fill
-        className="absolute inset-0 object-cover mt-[65px]"
-        priority
-      />
+      </div>
       <div className='global-container relative z-20' id='section-home'>
 
         <TitleMessage
