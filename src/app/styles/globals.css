@@ -122,7 +122,7 @@ p,li{
   padding-right: 0.6rem;
 }
 /* ...::: Custom Gradient :::... */
-.blue-gradient-1 {
+/* .blue-gradient-1 {
   background: radial-gradient(50% 50% at 85% 25%, #3425FE 5%, #2D4190 100%);
   filter: blur(105px);
 }
@@ -133,7 +133,7 @@ p,li{
 .puple-light-gradient-3 {
   background: radial-gradient(50% 50% at 100% 0%, #4D2190 0%, #4D2190 100%);
   filter: blur(125px);
-}
+} */
 ::-webkit-scrollbar {
   width: 4px;
 }
