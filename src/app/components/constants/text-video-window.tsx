@@ -9,7 +9,7 @@ const textVideoWindow = ({ header, paragraph, button }: TextVideoWindowProps) =>
     return (
         <>
             <div
-                className='jos hero-img overflow-hidden rounded-2xl  border-[12px] flex flex-col-reverse mx-auto max-w-[1024px] lg:flex-row mb-8 lg:mb-12'
+                className='jos hero-img overflow-hidden rounded-2xl  border-[12px] flex flex-col-reverse mx-auto max-w-[1024px] lg:flex-row mb-8 lg:mb-12 lg:h-[340px]'
                 data-jos_animation='zoom'
                 style={{ borderColor: 'rgba(255,255,255,0.15)' }}
             >
