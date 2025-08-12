@@ -53,7 +53,7 @@ const Navbar = ({ mobileMenu, setMobileMenu }: NavbarProps) => {
           />
         </div> */}
                 <div className={`mobile-menu-head ${mobileSubMenu && 'active'}`}>
-                    <div onClick={handleMenu} className='mobile-menu-close rotate-[-90deg]'>
+                    <div onClick={handleMenu} className='mobile-menu-close hidden rotate-[-90deg]'>
                         &#10095;
                     </div>
                 </div>

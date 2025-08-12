@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./styles/globals.css";
-// import './styles/pre-custom-style.css'
+import './styles/pre-custom-style.css'
 // import './styles/animations.css'
 import Header from '@/app/components/Header/Header';
 import Footer from '@/app/components/Footer/Footer'
