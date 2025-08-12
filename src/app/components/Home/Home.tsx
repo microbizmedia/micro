@@ -50,9 +50,7 @@ const Hero = () => {
         <div
           className='jos hero-img overflow-hidden rounded-2xl  border-[12px]   flex flex-col-reverse
             mx-auto max-w-[1024px] lg:flex-row mb-8 lg:mb-12 lg:h-[350px]'
-          style={{ borderColor: 'rgba(255,255,255,0.15)' }}
-          data-jos_animation='zoom' >
-
+          style={{ borderColor: 'rgba(255,255,255,0.15)' }} data-jos_animation='zoom' >
           <div className='flex flex-col justify-center flex-1 py-6 px-3 lg:pl-16  bg-[#0c1015]'>
             <h2>Our Story</h2>
             <p className='lg:mt-6 lg:mb-10 mt-4 mb-4 lg:mr-20'>Read more about us and what inspired us to do what we do for you.</p>
@@ -60,15 +58,11 @@ const Hero = () => {
               className='button inline-block lg:self-start rounded-md ' >
               Learn More &#x27a4; </Link>
           </div>
-
           <div className=' overflow-hidden flex-1 bg-[#0c1015]'>
             <img src='/our-story-image.jpg' alt='hero-dashboard' className=' scale-x-[-1] lg:pl-20 object-cover object-center ' />
           </div>
-
         </div>
-
       </div>
-
     </>
   );
 };
