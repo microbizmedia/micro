@@ -58,13 +58,14 @@ const PrivacyPupup = () => {
                             <Link
                                 onClick={handleDecline}
                                 href='privacy'
-                                className="button"
+                                className="button w-full sm:w-auto"
                             >
                                 Read Privacy Policy
                             </Link>
                             <button
                                 onClick={handleAccept}
-                                className="flex text-[#ffffff] justify-center items-center rounded-md bg-[#746eb8] py-[10px] px-[30px] font-semibold opacity-[0.9] cursor-pointer"
+                                className="flex text-[#ffffff] justify-center items-center rounded-md bg-[#746eb8] py-[10px]
+                                 px-[30px] font-semibold opacity-[0.9] cursor-pointer w-full sm:w-auto"
                             >
                                 Agree and Continue &#x27a4;
                             </button>
