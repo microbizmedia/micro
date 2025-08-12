@@ -5,7 +5,6 @@ import './menu.css'
 // import xIcon from '../footer/social_media_icons/x_icon_b.png'
 // import instagramIcon from '../footer/social_media_icons/instagram_icon_b.png'
 
-
 type NavbarProps = {
     mobileMenu: boolean;
     setMobileMenu: React.Dispatch<React.SetStateAction<boolean>>;
@@ -20,11 +19,7 @@ const Navbar = ({ mobileMenu, setMobileMenu }: NavbarProps) => {
 
     return (
         <>
-
-
             <div onClick={handleMenu} className={`lg:hidden menu-overlay ${mobileMenu && 'active'}`} />
-
-
             <nav className={`menu-block ${mobileMenu && 'active'}`} id='append-menu-header'  >
 
                 <ul className={`site-menu-main`}>

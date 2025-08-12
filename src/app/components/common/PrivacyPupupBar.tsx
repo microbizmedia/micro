@@ -1,3 +1,4 @@
+'use client'
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
@@ -30,40 +31,40 @@ const PrivacyPupup = () => {
 
     return showPopup ? (
         <div className="absolute w-full min-h-screen">
-            <div className="fixed inset-0 flex items-end bg-colorBackground bg-opacity-20 z-50 ">
+            <div className="fixed inset-0 flex items-end  bg-[#0c1015]/20 z-50 " >
 
-                <div className="bg-colorBackground shadow-lg w-full ">
+                <div className="bg-[#0c1015] shadow-lg w-full ">
                     <div className='flex justify-end'>
                         <button
                             onClick={handleDecline}
-                            className="pupup-close-symbol button rounded-md bg-colorPurple border-none text-3xl
-                                     py-3 px-1 m-4  md:mb-0"
+                            className="pupup-close-symbol rounded-md bg-[#746eb8] border-none 
+                                     py-3 px-1 mx-4 my-5  md:mb-0"
                         >
                             <span />
                         </button>
                     </div>
 
-                    <div className='global-container pb-4  '>
+                    <div className='global-container py-4  '>
 
                         <h2 className="mb-2">We care about your privacy!</h2>
-                        <p className="mb-2 text-sm sub-title">Last Updated: {currentDate}</p>
-                        <p className="hidden md:block mb-3 text-sm sub-title">
-                            By clicking 'Agree and Continue,' you acknowledge that you have read, understood,
+                        <p className="mb-2  sub-title">Last Updated: {currentDate}</p>
+                        <p className="hidden md:block mb-3 sub-title">
+                            By clicking &apos;Agree and Continue&apos;, you acknowledge that you have read, understood,
                             and agreed to the entirety of this Privacy Policy, exactly as specified by MicroBiz Media LLC.
                             By continuing to access or use our services, whether as a user, visitor, or client,
                             you agree to be bound by this policy, which constitutes a legally binding agreement.
                         </p>
-                        <div className='flex flex-wrap gap-4 justify-end'>
+                        <div className='flex flex-wrap gap-4 justify-end my-4'>
                             <Link
                                 onClick={handleDecline}
                                 href='privacy'
-                                className="button flex  justify-center rounded-md bg-colorWhite border-none text-colorBackground w-full md:w-auto text-center "
+                                className="button"
                             >
                                 Read Privacy Policy
                             </Link>
                             <button
                                 onClick={handleAccept}
-                                className="button flex  justify-center rounded-md bg-colorPurple border-none w-full md:w-auto"
+                                className="flex text-[#ffffff] justify-center items-center rounded-md bg-[#746eb8] py-[10px] px-[30px] font-semibold opacity-[0.9] cursor-pointer"
                             >
                                 Agree and Continue &#x27a4;
                             </button>
