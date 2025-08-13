@@ -1,11 +1,11 @@
 "use client";
-import Link  from 'next/link';
+import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from "next/navigation";
 
 const Footer = () => {
   const pathname = usePathname();
-  const showRoutes = ['/', "work", "services", "process", "about", ];
+  const showRoutes = ['/', "work", "services", "process", "about",];
   return (
     <>
       {showRoutes.includes(pathname) ? (
@@ -22,16 +22,16 @@ const Footer = () => {
         {showRoutes.includes(pathname) ? (
           <div className='relative'>
             <Image src='/footer_bg.png' loading="lazy" alt='background image' width={2000} height={20}
-            className='absolute z-10 bottom-[0%] w-full max-h-[110vh]  mx-auto left-1/2 -translate-x-1/2 ' />
-            <Image src='/footer_graphic.png'  loading="lazy" alt='footer graphic website images'  width={1000} height={20}
-            className='relative   w-[100%] bottom-[100%] bg-bottom z-20' />
+              className='absolute z-10 bottom-[0%] w-full max-h-[110vh]  mx-auto left-1/2 -translate-x-1/2 ' />
+            <Image src='/footer_graphic.png' loading="lazy" alt='footer graphic website images' width={1000} height={20}
+              className='relative   w-[100%] bottom-[100%] bg-bottom z-20' />
           </div>
         ) : null}
 
         {/* Footer Top */}
         <div className='global-container pt-8 '>
           <div className='flex flex-wrap mb-4 md:justify-between'>
-            <div className='flex flex-col mt-2 gap-y-4 p-3 md:max-w-60'>
+            <div className='flex flex-col mt-1 gap-y-4 p-3 md:max-w-60'>
               <Link href='/' className='inline-block'>
                 <Image
                   src='/logo_standard.svg'
@@ -47,35 +47,27 @@ const Footer = () => {
 
             </div>
 
-            <div className='flex flex-col gap-y-6 p-3'>
-              <h4 className='text-[26px] text-bold capitalize'>
-                Menu
-              </h4>
-              <ul className='flex flex-col  gap-y-3'>
-                <li><Link href='work' > Work</Link> </li>
-                <li><Link href='services' >Services </Link></li>
-                <li><Link href='process' > Process</Link></li>
-                <li> <Link href='careers' >Careers </Link> </li>
-                <li> <Link href='about' > About Us </Link>  </li>
-              </ul>
-            </div>
+            <ul className='flex flex-col  gap-y-3 p-3'>
+              <li className='text-2xl font-medium mb-2'>Menu</li>
+              <li><Link href='work' > Work</Link> </li>
+              <li><Link href='services' >Services </Link></li>
+              <li><Link href='process' > Process</Link></li>
+              <li> <Link href='careers' >Careers </Link> </li>
+              <li> <Link href='about' > About Us </Link>  </li>
+            </ul>
 
-            <div className='flex flex-col gap-y-6 p-3'>
-              <h4 className='text-[26px] text-bold capitalize '>
-                Legal
-              </h4>
-              <ul className='flex flex-col gap-y-3'>
-                <li><Link href='FAQ' > FAQ </Link></li>
-                <li> <Link href='affiliate' > Affilliate Program </Link> </li>
-                <li><Link href='contact'> Customer Service</Link> </li>
-                <li><Link href='privacy'>Privacy Policy</Link></li>
-                <li><Link href='termsofservice'>Terms Of Service</Link></li>
-              </ul>
-            </div>
+            <ul className='flex flex-col  gap-y-3 p-3'>
+              <li className='text-2xl font-medium mb-2'>Legal</li>
+              <li><Link href='FAQ' > FAQ </Link></li>
+              <li> <Link href='affiliate' > Affilliate Program </Link> </li>
+              <li><Link href='contact'> Customer Service</Link> </li>
+              <li><Link href='privacy'>Privacy Policy</Link></li>
+              <li><Link href='termsofservice'>Terms Of Service</Link></li>
+            </ul>
 
             <div className='flex flex-col gap-y-6 p-3'>
 
-              <h4 className='text-[26px] text-bold capitalize mr-10'>
+              <h4 className='text-2xl text-bold capitalize mr-10'>
                 Social Links
               </h4>
               <div className='flex justify-between'>
