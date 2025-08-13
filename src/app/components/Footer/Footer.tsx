@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
       {showRoutes.includes(pathname) ? (
-        <div className='global-container relative jos text-center pt-4 mb-8 md:mb-12  z-40'>
+        <div className='global-container relative text-center pt-4 mb-8 md:mb-12  z-40'>
           <h2 className='pb-6'>Let&apos;s Start Your Story</h2>
           <Link href='contact' className='button-micro  hover:border-violet-400' >
             Start A Free Consultation
@@ -24,7 +24,7 @@ const Footer = () => {
             <Image src='/footer_bg.png' loading="lazy" alt='background image' width={2000} height={20}
               className='absolute z-10 bottom-[0%] w-full max-h-[110vh]  mx-auto left-1/2 -translate-x-1/2 ' />
             <Image src='/footer_graphic.png' loading="lazy" alt='footer graphic website images' width={1000} height={20}
-              className='relative   w-[100%] bottom-[100%] bg-bottom z-20' />
+              className='relative w-[100%] bottom-[100%] bg-bottom z-20'/>
           </div>
         ) : null}
 

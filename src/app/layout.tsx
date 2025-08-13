@@ -8,6 +8,7 @@ import Footer from '@/app/components/Footer/Footer'
 import PrivacyPupup from "@/app/components/common/PrivacyPupupBar";
 
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
