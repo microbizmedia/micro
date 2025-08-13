@@ -37,6 +37,7 @@ const PrivacyPupup = () => {
                     <div className='flex justify-end'>
                         <button
                             onClick={handleDecline}
+                            aria-label="Close privacy popup bar"
                             className="pupup-close-symbol rounded-md bg-[#746eb8] border-none 
                                      py-3 px-1 mx-4 my-5  md:mb-0"
                         >
@@ -56,6 +57,7 @@ const PrivacyPupup = () => {
                         </p>
                         <div className='flex flex-wrap gap-4 justify-end my-4'>
                             <Link
+                             aria-label="Navigate to read privacy policy"
                                 onClick={handleDecline}
                                 href='privacy'
                                 className="button w-full sm:w-auto"
@@ -64,6 +66,7 @@ const PrivacyPupup = () => {
                             </Link>
                             <button
                                 onClick={handleAccept}
+                                  aria-label="Agree and close privacy popup bar"
                                 className="flex text-[#ffffff] justify-center items-center rounded-md bg-[#746eb8] py-[10px]
                                  px-[30px] font-semibold opacity-[0.9] cursor-pointer w-full sm:w-auto"
                             >

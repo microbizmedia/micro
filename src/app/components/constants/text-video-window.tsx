@@ -18,7 +18,7 @@ const textVideoWindow = ({ header, paragraph, button }: TextVideoWindowProps) =>
                 <div className='bg-[#0c1015] flex justify-center'>
                     <video width='420' autoPlay muted loop playsInline
                         className='flex-1 lg:pr-20  object-cover object-center  lg:pt-0 ' >
-                        <source src='/videos/MP4_video_800kb.mp4' type="video/mp4" /> 
+                        <source src='/videos/websites_video_700kb.mp4' type="video/mp4" /> 
                         Your browser does not support the video tag.
                     </video>
                 </div>

@@ -39,12 +39,14 @@ const Hero = () => {
             <Link href='contact' className='button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md'>Free Consultation &#x27a4;  </Link>
           </div>
           <a href="mailto:info@microbizmedia.com?subject=General Inquiry&body=Hello,%0D%0A%0D%0AI have a question regarding your services. Here are the details:%0D%0A%0D%0A[Please describe your concern here]%0D%0A%0D%0AThank you." target="_blank"
-            className=' relative  flex justify-center items-center lg:right-[40px]'>
+            className=' relative  flex justify-center items-center w-full'>
             <Image
               loading='lazy'
               src='/icon_images/email_us_icon.png'
-              alt='letter-image'
-              className='float-animation  size-5/12'
+              width={200}
+              height={200}
+              alt='letter_image'
+              className='float-animation '
             />  
           </a>
         </div>
@@ -61,7 +63,7 @@ const Hero = () => {
               Learn More &#x27a4; </Link>
           </div>
           <div className=' overflow-hidden flex-1 bg-[#0c1015]'>
-            <Image loading='lazy' src='/our-story-image.jpg' alt='hero-dashboard'
+            <Image loading='lazy' src='/our-story-image.jpg' alt='hero-dashboard'  width={1200} height={800}
               className=' scale-x-[-1] lg:pl-20 object-cover object-center ' />
           </div>
         </div>

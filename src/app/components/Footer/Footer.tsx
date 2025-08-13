@@ -40,10 +40,10 @@ const Footer = () => {
                   height={24}
                 />
               </Link>
-              <li className='list-none leading-[1.8rem]'>
+              <p className=' leading-[1.8rem]'>
                 Our mission is to empower businesses by providing
                 innovative online solutions that enhance their digital presence.
-              </li>
+              </p>
 
             </div>
 
