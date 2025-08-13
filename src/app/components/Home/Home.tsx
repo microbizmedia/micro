@@ -2,6 +2,7 @@ import TitleMessage from '@/app/components/constants/title-message';
 import ServicesIcons from '@/app/components/constants/services-icons';
 import TextVideoWindow from '@/app/components/constants/text-video-window';
 import Link from 'next/link'
+import Image from 'next/image';
 const Hero = () => {
   return (
     <>
@@ -39,11 +40,12 @@ const Hero = () => {
           </div>
           <a href="mailto:info@microbizmedia.com?subject=General Inquiry&body=Hello,%0D%0A%0D%0AI have a question regarding your services. Here are the details:%0D%0A%0D%0A[Please describe your concern here]%0D%0A%0D%0AThank you." target="_blank"
             className=' relative  flex justify-center items-center lg:right-[40px]'>
-            <img
+            <Image
+              loading='lazy'
               src='/icon_images/email_us_icon.png'
               alt='letter-image'
               className='float-animation  size-5/12'
-            />
+            />  
           </a>
         </div>
 
@@ -59,7 +61,8 @@ const Hero = () => {
               Learn More &#x27a4; </Link>
           </div>
           <div className=' overflow-hidden flex-1 bg-[#0c1015]'>
-            <img src='/our-story-image.jpg' alt='hero-dashboard' className=' scale-x-[-1] lg:pl-20 object-cover object-center ' />
+            <Image loading='lazy' src='/our-story-image.jpg' alt='hero-dashboard'
+              className=' scale-x-[-1] lg:pl-20 object-cover object-center ' />
           </div>
         </div>
       </div>
