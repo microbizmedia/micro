@@ -70,7 +70,6 @@ p.sub-title{
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 1.5rem;
-  line-height: 1.5;
   /* transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms; */
@@ -90,7 +89,6 @@ p.sub-title{
   padding-bottom: 16px;
   text-align: center;
   line-height: 1.5rem;
-  line-height: 1.5;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;

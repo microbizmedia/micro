@@ -21,11 +21,11 @@ const Navbar = ({ mobileMenu, setMobileMenu }: NavbarProps) => {
             <nav className={`menu-block ${mobileMenu && 'active'}`} id='append-menu-header'  >
 
                 <ul className={`site-menu-main`}>
-                    <li onClick={handleMenu}  > <Link href='work' className='nav-link-item '> Our Work</Link> </li>
-                    <li onClick={handleMenu} > <Link href='' className='nav-link-item '>Services </Link></li>
-                    <li onClick={handleMenu}  > <Link href='' className='nav-link-item'> Process </Link></li>
-                    <li onClick={handleMenu} > <Link href='' className='nav-link-item '>Careers</Link>  </li>
-                    <li onClick={handleMenu} > <Link href='' className='nav-link-item '> About Us </Link>  </li>
+                    <li onClick={handleMenu}  > <Link href='/work' className='nav-link-item '> Our Work</Link> </li>
+                    <li onClick={handleMenu} > <Link href='/services' className='nav-link-item '>Services </Link></li>
+                    <li onClick={handleMenu}  > <Link href='/process' className='nav-link-item'> Process </Link></li>
+                    <li onClick={handleMenu} > <Link href='/careers' className='nav-link-item '>Careers</Link>  </li>
+                    <li onClick={handleMenu} > <Link href='/about' className='nav-link-item '> About Us </Link>  </li>
                 </ul>
 
                 <div className='dropdown-menu-social-media-icons'>
