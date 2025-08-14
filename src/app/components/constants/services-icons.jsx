@@ -5,12 +5,9 @@ const ServicesIcons = ({ title }) => {
 
 
 const [isExpanded, setIsExpanded] = useState(false);
-
-  console.log(isExpanded ? "max-h-full" : "max-h-[610px]")
-  console.log(isExpanded ? "hidden" : "block")
   return (
     <div className="mb-6 lg:mb-16">
-      <h2 className=' mx-auto   pb-4 lg:pb-8   max-w-[715px] text-center ' >{title}</h2>
+      <h2 className=' mx-auto   pb-4 lg:pb-8   max-w-[715px] text-center 'data-aos='zoom-in' >{title}</h2>
        <div className={`flex flex-wrap justify-center gap-8 overflow-hidden transition-all duration-300 
          ${isExpanded ? "max-h-full" : "max-h-[610px]"} `}>
 

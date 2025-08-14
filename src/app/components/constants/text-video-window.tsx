@@ -8,8 +8,8 @@ const textVideoWindow = ({ header, paragraph, button }: TextVideoWindowProps) =>
 
     return (
             <div
-                className='jos overflow-hidden rounded-2xl  border-[12px] flex flex-col-reverse mx-auto max-w-[1024px] lg:flex-row mb-8 lg:mb-12 lg:h-[340px]'
-                 style={{ borderColor: 'rgba(255,255,255,0.15)' }} data-jos_animation="fade-up">
+                className=' overflow-hidden rounded-2xl  border-[12px] flex flex-col-reverse mx-auto max-w-[1024px] 
+                lg:flex-row mb-8 lg:mb-12 lg:h-[340px] border-white/15'  data-aos='zoom-in'>
                 <div className='flex flex-col justify-center flex-1 bg-[#0c1015] px-3 py-6 lg:pl-16'>
                     <h2>{header}</h2>
                     <p className='lg:mt-6 lg:mb-10 mt-4 mb-4 lg:max-w-[70%]'>{paragraph}</p>

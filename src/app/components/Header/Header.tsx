@@ -48,7 +48,7 @@ const Header = () => {
     
 
       <div className='flex'>
-        <Link href="/web/services#target-pricing" className=' py-[20.5px] px-[36px]  font-semibold opacity-[0.9]
+        <Link href="/web/services#target-pricing" className=' py-[20.5px] px-[36px]  font-[600] 
              bg-[#746eb8]' aria-label='Link to price packages'  >
           Pricing
         </Link>

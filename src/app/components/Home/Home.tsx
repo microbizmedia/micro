@@ -19,7 +19,7 @@ const Hero = () => {
           header='Your Digital Agency'
           paragraph='Take full control of your potential through our expert levels of design,
                 development and marketing for your brand and business.'
-          className='sub-title max-w-[600px] m-auto'
+          className=' max-w-[600px] m-auto'
         />
         <TextVideoWindow
           header="Browse Our Catalog"
@@ -30,8 +30,8 @@ const Hero = () => {
           title="What We Offer" />
 
         <div id='consultation-window-section'
-          className='jos overflow-hidden rounded-[40px]  bg-gradient-to-t from-[#0c1015] to-[#746eb8] max-w-[1024px] 
-              flex flex-col-reverse mx-auto lg:flex-row mb-6 lg:mb-16 pt-16 pb-4  lg:p-0' data-jos_animation="fade-up"
+          className=' overflow-hidden rounded-[40px]  bg-gradient-to-t from-[#0c1015] to-[#746eb8] max-w-[1024px] 
+              flex flex-col-reverse mx-auto lg:flex-row mb-6 lg:mb-16 pt-16 pb-4  lg:p-0' data-aos='zoom-in'
         >
           <div className='flex flex-col justify-center px-8 py-10 lg:pl-[76px] lg:max-w-[50%]'>
             <h2>Our consultations are always free</h2>
@@ -52,9 +52,9 @@ const Hero = () => {
         </div>
 
         <div
-          className='jos overflow-hidden rounded-2xl  border-[12px]   flex flex-col-reverse
+          className=' overflow-hidden rounded-2xl  border-[12px]   flex flex-col-reverse
             mx-auto max-w-[1024px] lg:flex-row mb-8 lg:mb-12 lg:h-[350px]' 
-          style={{ borderColor: 'rgba(255,255,255,0.15)' }} data-jos_animation="fade-up" >
+          style={{ borderColor: 'rgba(255,255,255,0.15)' }} data-aos='zoom-in' >
           <div className='flex flex-col justify-center flex-1 py-6 px-3 lg:pl-16  bg-[#0c1015]'>
             <h2>Our Story</h2>
             <p className='lg:mt-6 lg:mb-10 mt-4 mb-4 lg:mr-20'>Read more about us and what inspired us to do what we do for you.</p>

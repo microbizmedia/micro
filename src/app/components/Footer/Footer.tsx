@@ -5,11 +5,11 @@ import { usePathname } from "next/navigation";
 
 const Footer = () => {
   const pathname = usePathname();
-  const showRoutes = ['/', "work", "services", "process", "about",];
+  const showRoutes = ['/', "/work", "/services", "/process", "/about",];
   return (
     <>
       {showRoutes.includes(pathname) ? (
-        <div className='global-container relative text-center pt-4 mb-8 md:mb-12  z-40'>
+        <div className='global-container relative text-center pt-4 mb-8 md:mb-12  z-40' data-aos='zoom-in'>
           <h2 className='pb-6'>Let&apos;s Start Your Story</h2>
           <Link href='contact' className='button-micro  hover:border-violet-400' >
             Start A Free Consultation
@@ -38,6 +38,7 @@ const Footer = () => {
                   alt='logo'
                   width={150}
                   height={24}
+                  loading='lazy'
                 />
               </Link>
               <p className=' leading-[1.8rem]'>

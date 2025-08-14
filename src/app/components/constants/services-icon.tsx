@@ -11,8 +11,8 @@ type CardIconProps = {
 const CardIcon = ({ text, image, delay }: CardIconProps) => {
   return (
     <div
-      className="jos flex justify-center"
-      data-jos_animation="flip"
+      className=" flex justify-center"
+      data-aos="flip-left"
     data-jos_delay={delay}
     >
       <div className="h-[180px] w-[290px] bg-[#0c1015] border  rounded-lg p-6 flex flex-col items-start justify-center"

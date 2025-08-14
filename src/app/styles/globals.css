@@ -2,7 +2,7 @@
 
 :root {
   --background: #0c1015;
-  --foreground: #ffffff;
+  --foreground:  #e6e6e6;
 }
 
 @theme inline {
@@ -15,7 +15,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0c1015;
-    --foreground: #ffffff;
+    --foreground:  #e6e6e6;
   }
 }
 body {
@@ -27,24 +27,22 @@ h1 {
   font-size: 3.5rem;
   font-weight: 600;
   line-height: 1;
-  opacity: 0.9;
+ 
 }
 h2 {
   font-size: 2rem;
   font-weight: 600;
   line-height: 2.3rem;
-  opacity: 0.9;
+
 }
 h3 {
   font-size: 1.6rem;
   line-height: 2rem;
-  opacity: 0.9;
+
 }
-p,li{
-  opacity: 0.9;
-}
-.sub-title{
-  opacity: 0.7;
+
+p.sub-title{
+  font-weight: 300;
 }
 @media (max-width: 600px) {
   h1 {
@@ -63,7 +61,7 @@ p,li{
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color:  #e6e6e6;
   color: #0c1015;
   overflow: hidden;
   border-width: 1px;
@@ -77,8 +75,7 @@ p,li{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms; */
   border-radius: 5px;
-  font-weight: 600;
-  opacity: 0.9;
+  font-weight: 500;
 }
 .button-micro {
   position: relative;
@@ -98,8 +95,7 @@ p,li{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
   border-radius: 10px;
-  font-weight: 600;
-  opacity: 0.9;
+  font-weight: 500;
 }
 .button-micro:before {
   content: " ";
@@ -157,7 +153,7 @@ p,li{
   display: block;
   border-radius: 10px;
   height: 5px;
-  background-color: #ffffff;
+  background-color:  #e6e6e6;
   width: 25px;
   position: relative;
   rotate: 45deg;
@@ -168,7 +164,7 @@ p,li{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color:  #e6e6e6;
   rotate: -90deg;
   border-radius: 10px;
 }

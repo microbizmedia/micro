@@ -1,9 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import './menu.css'
-// import threadsIcon from '../footer/social_media_icons/threads_icon.png'
-// import xIcon from '../footer/social_media_icons/x_icon_b.png'
-// import instagramIcon from '../footer/social_media_icons/instagram_icon_b.png'
+import Image from 'next/image';
 
 type NavbarProps = {
     mobileMenu: boolean;
@@ -30,25 +28,35 @@ const Navbar = ({ mobileMenu, setMobileMenu }: NavbarProps) => {
                     <li onClick={handleMenu} > <Link href='' className='nav-link-item '> About Us </Link>  </li>
                 </ul>
 
-                {/* <div className='dropdown-menu-social-media-icons'>
-          <img
-            src={threadsIcon}
-            alt='threads-icon'
-            className='  size-10'
-          />
-          <img
-            src={xIcon}
-            alt='x-icon'
-            className='  size-10'
-          />
-          <img
-            src={instagramIcon}
-            alt='instagram-icon'
-            className='  size-10'
-          />
-        </div> */}
+                <div className='dropdown-menu-social-media-icons'>
+                    <Image
+                        src='/threads_icon.png'
+                        alt='threads icon'
+                        width={30}
+                        height={20}
+                         className='  size-10'
+                        loading='lazy'
+                    />
+                    <Image
+                        src='/x_icon.png'
+                        alt='x icon'
+                        width={30}
+                        height={20}
+                         className='  size-10'
+                        loading='lazy'
+                    />
+                    <Image
+                        src='/instagram_icon.png'
+                        alt='instagram icon'
+                        width={30}
+                        height={20}
+                         className='  size-10'
+                        loading='lazy'
+
+                    />
+                </div>
                 <div className={`mobile-menu-head ${mobileSubMenu && 'active'}`}>
-                    <div onClick={handleMenu} className='mobile-menu-close hidden rotate-[-90deg]'>
+                    <div onClick={handleMenu} className='mobile-menu-close lg:hidden rotate-[-90deg]'>
                         &#10095;
                     </div>
                 </div>
