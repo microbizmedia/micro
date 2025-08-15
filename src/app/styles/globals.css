@@ -38,7 +38,7 @@ h2 {
 h3 {
   font-size: 1.6rem;
   line-height: 2rem;
-
+ font-weight: 500;
 }
 
 p.sub-title{
@@ -70,6 +70,7 @@ p.sub-title{
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 1.5rem;
+  cursor: pointer;
   /* transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms; */
@@ -165,4 +166,18 @@ p.sub-title{
   background-color:  #e6e6e6;
   rotate: -90deg;
   border-radius: 10px;
+}
+
+
+/* Prevents placeholders to change color*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+-webkit-box-shadow: 0 0 0px 1000px rgba(116, 110, 184, 0.5) inset !important;
+  -webkit-text-fill-color: #e6e6e6 !important; /* keep text white */
+  opacity: 0.9;
+  caret-color: white;
+  transition: background-color 5000s ease-in-out 0s; 
 }

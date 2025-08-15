@@ -68,7 +68,7 @@ const Footer = () => {
 
             <div className='flex flex-col gap-y-6 p-3'>
 
-              <h4 className='text-2xl text-bold capitalize mr-10'>
+              <h4 className='text-2xl text-bold mr-10'>
                 Social Links
               </h4>
               <div className='flex justify-between'>

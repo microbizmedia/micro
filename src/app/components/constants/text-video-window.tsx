@@ -13,7 +13,7 @@ const textVideoWindow = ({ header, paragraph, button }: TextVideoWindowProps) =>
                 <div className='flex flex-col justify-center flex-1 bg-[#0c1015] px-3 py-6 lg:pl-16'>
                     <h2>{header}</h2>
                     <p className='lg:mt-6 lg:mb-10 mt-4 mb-4 lg:max-w-[70%]'>{paragraph}</p>
-                    <Link href='work' className='button inline-block lg:self-start'> {button} &#x27a4;  </Link>
+                    <Link href='/work' className='button inline-block lg:self-start'> {button} &#x27a4;  </Link>
                 </div>
                 <div className='bg-[#0c1015] flex justify-center'>
                     <video width='420' autoPlay muted loop playsInline
