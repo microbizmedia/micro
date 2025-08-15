@@ -84,8 +84,8 @@ const CustomerService = () => {
         {/*...::: 404 Section Start :::... */}
         <section id='affiliate-section' className='global-container'>
           <TitleMessage
-            header="We're All Ears!"
-            paragraph="Send us an email of fill up the form, we'll get right back to you."
+            header="We&apos;re All Ears!"
+            paragraph="Send us an email or fill up the form, we&apos;ll get right back to you."
           />
 
           <div
@@ -196,13 +196,13 @@ const CustomerService = () => {
             </div>
             <a className='relative lg:right-[40px] flex-1 flex justify-center items-center pt-16 lg:pr-20   h-[240px] lg:pt-0 w-full ' href="mailto:info@microbizmedia.com?subject=General Inquiry&body=Hello,%0D%0A%0D%0AI have a question regarding your services. Here are the details:%0D%0A%0D%0A[Please describe your concern here]%0D%0A%0D%0AThank you." target="_blank">
               <Image
-              src="/icon_images/email_us_icon.png"
-              width={300}
-              height={300}
-              alt='letter-image'
-              className=' size-6/12 float-animation '
-              loading="lazy"
-            /></a>
+                src="/icon_images/email_us_icon.png"
+                width={300}
+                height={300}
+                alt='letter-image'
+                className=' size-6/12 float-animation '
+                loading="lazy"
+              /></a>
           </div>
           {/* Section Spacer */}
         </section>
