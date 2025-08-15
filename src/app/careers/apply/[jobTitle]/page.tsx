@@ -88,7 +88,7 @@ const CareersAplications = () => {
 
 
         try {
-            const response = await fetch("http://localhost:5000/apply", {
+            const response = await fetch("https://micro-biz-backend.vercel.app/apply", {
                 method: "POST",
                 body: applicationData,
             });
