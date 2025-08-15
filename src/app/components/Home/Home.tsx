@@ -39,14 +39,14 @@ const Hero = () => {
             <Link href='contact' className='button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md'>Free Consultation &#x27a4;  </Link>
           </div>
           <a href="mailto:info@microbizmedia.com?subject=General Inquiry&body=Hello,%0D%0A%0D%0AI have a question regarding your services. Here are the details:%0D%0A%0D%0A[Please describe your concern here]%0D%0A%0D%0AThank you." target="_blank"
-            className=' relative  flex justify-center items-center w-full'>
+            className=' relative lg:right-[40px] flex-1 flex justify-center items-center pt-8    h-[300px] w-full '>
             <Image
               loading='lazy'
               src='/icon_images/email_us_icon.png'
-              width={200}
-              height={200}
+              width={300}
+              height={300}
               alt='letter_image'
-              className='float-animation '
+              className='float-animation size-6/12'
             />  
           </a>
         </div>
