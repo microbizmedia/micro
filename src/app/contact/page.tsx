@@ -95,7 +95,7 @@ const CustomerService = () => {
           >
             <form className="w-full  rounded-lg px-4 lg:px-16 pt-8 md:pt-14 md:pb-4"
               onSubmit={handleSubmit}    >
-              <h2 className="mb-8">Let's Start Your Story</h2>
+              <h2 className="mb-8">Let&apos;s Start Your Story</h2>
 
               {/* Four placeholders */}
               <div className="flex flex-wrap gap-4 lg:grid grid-rows-2 grid-cols-2">
