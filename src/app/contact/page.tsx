@@ -167,7 +167,7 @@ const CustomerService = () => {
               {showMessage ? (
                 isSubmitted ? (
                   <p className="text-green-500 text-center py-1 md:pt-3 md:pb-0">
-                    Thank you for contacting us! We'll get back to you soon.</p>
+                    Thank you for contacting us! We&apos;ll get back to you soon.</p>
                 ) : validationErrors.length > 0 ? (
                   <div className="text-red-500 text-center py-1 md:pt-3 md:pb-0">
                     {validationErrors.map((error, index) => (
