@@ -59,7 +59,7 @@ const PrivacyPolicy = () => {
             <div className='px-4 py-4 lg:pl-16 lg:pr-8 whitespace-pre-line'>
                 <h3>8. Changes to This Policy</h3>
                 <p className='pt-3 sub-title'>We may update this Privacy Policy occasionally.
-                    Changes will be posted on this page with a revised "Last Updated" date.</p>
+                    Changes will be posted on this page with a revised &quot;Last Updated&quot; date.</p>
             </div>
 
             <div className=' px-4 pt-4 pb-8 lg:pl-16 lg:pr-8 whitespace-pre-line'>

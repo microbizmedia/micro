@@ -2,7 +2,7 @@ const TermsOfService = () => {
     return (
         <div id='terms-of-service-section' className='global-container z-40'>
             <h1 className=' text-center pt-14 lg:pt-26 '> Terms Of Service  </h1>
-            <p className={`sub-title tracking-wider text-center  m-auto py-6 lg:py-8 `}> Welcome to MicroBizMedia LLC! These Terms of Service ("Terms") govern your use of our website,
+            <p className={`sub-title tracking-wider text-center  m-auto py-6 lg:py-8 `}> Welcome to MicroBizMedia LLC! These Terms of Service (&quot;Terms&quot;) govern your use of our website,
                 services, and any interactions with us. By accessing or using our services, you agree to comply with and be bound by these Terms.
                 If you do not agree to these Terms, please do not use our services.</p>
             <p className="sub-title px-4 pb-4 lg:pl-16 lg:pr-8  ">Effective Date: 2/19/2025</p>
@@ -10,7 +10,7 @@ const TermsOfService = () => {
             <div className=' px-4 py-4 lg:pl-16 lg:pr-8 whitespace-pre-line'>
                 <h3>1. Services Provided</h3>
                 <p className='pt-3 sub-title'>MicroBizMedia LLC provides web design, development,
-                    and related services ("Services") as outlined in project proposals, contracts, or agreements.
+                    and related services (&quot;Services&quot;) as outlined in project proposals, contracts, or agreements.
                     Specific deliverables, timelines, and pricing will be agreed upon in writing before work begins.</p>
             </div>
 
