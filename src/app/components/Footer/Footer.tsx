@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
       {showRoutes.includes(pathname) ? (
-        <div className='global-container relative text-center pt-4 mb-8 md:mb-12  z-40' data-aos='zoom-in'>
+        <div className='global-container text-center pt-4 mb-8 md:mb-12  z-40' data-aos='zoom-in'>
           <h2 className='pb-6'>Let&apos;s Start Your Story</h2>
           <Link href='contact' className='button-micro  hover:border-violet-400' >
             Start A Free Consultation

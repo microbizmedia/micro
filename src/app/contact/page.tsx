@@ -79,10 +79,8 @@ const CustomerService = () => {
   };
 
   return (
-    <>
-      <main className='main-wrapper  relative overflow-hidden'>
-        {/*...::: 404 Section Start :::... */}
-        <section id='affiliate-section' className='global-container'>
+
+        <div id='affiliate-section' className='global-container'>
           <TitleMessage
             header="We&apos;re All Ears!"
             paragraph="Send us an email or fill up the form, we&apos;ll get right back to you."
@@ -204,11 +202,8 @@ const CustomerService = () => {
                 loading="lazy"
               /></a>
           </div>
-          {/* Section Spacer */}
-        </section>
-        {/*...::: 404 Section End :::... */}
-      </main>
-    </>
+        </div>
+
   );
 };
 

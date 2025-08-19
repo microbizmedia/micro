@@ -13,7 +13,7 @@ const Hero = () => {
         <div className='puple-light-gradient-3 z-0  absolute right-[0%] top-[10vh]  h-[30%] w-[45%] rounded-[400px] -rotate-[6.022deg] '></div>
         <div className='purple-gradient-angle z-0  absolute right-[10%] top-[10vh] lg:right-[10%] lg:top-[40vh] xxl:right-[18%] xxl:top-[30vh]   h-[40%] w-[55%] rounded-[40px] -rotate-[0.022deg] '></div>
       </div>
-      <div className='global-container relative z-20' id='section-home'>
+      <div id='section-home' className='global-container z-20' >
 
         <TitleMessage
           header='Your Digital Agency'

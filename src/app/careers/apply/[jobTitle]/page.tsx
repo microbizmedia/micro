@@ -129,7 +129,7 @@ const CareersAplications = () => {
                     <TitleMessage
                         header="Join Our Team!"
                         paragraph="Apply today and take the next step in your career with us." />
-                    <div data-jos_animation='zoom' className='jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white/15  mb-8 lg:mb-12 ' >
+                    <div  data-aos='zoom-in' className=' overflow-hidden rounded-2xl  border-[12px] border-white/15  mb-8 lg:mb-12 ' >
 
                         <form className="w-full  rounded-lg px-4 lg:px-16 pt-8 md:pt-14 md:pb-4" onSubmit={handleSubmit}>
                             <h3 className="mb-8">Apply for {jobTitle ? formattedJobTitle : "a Position"}</h3>

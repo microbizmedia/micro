@@ -6,7 +6,9 @@ import './styles/animations.css'
 import Header from '@/app/components/Header/Header';
 import Footer from '@/app/components/Footer/Footer'
 import PrivacyPupup from "@/app/components/common/PrivacyPupupBar";
-import { Roboto } from 'next/font/google'
+import { Roboto } from 'next/font/google';
+import AOSInit from "@/app/hooks/aos-animation";  // 👈 import client wrapper
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -37,6 +39,7 @@ export default function RootLayout({
       >
         <Header />
         <PrivacyPupup />
+        <AOSInit />  
         {children}
         <SpeedInsights />
         <Footer />
