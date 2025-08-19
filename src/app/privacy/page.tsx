@@ -1,7 +1,7 @@
 const PrivacyPolicy = () => {
     return (
         <div id='privacy-policy' className='global-container z-40'>
-            <h1 className=' text-center pt-14 lg:pt-26 '> Privacy Policy  </h1>
+            <h1 className=' text-center pt-14'> Privacy Policy  </h1>
             <p className={`sub-title tracking-wider text-center  m-auto py-6 lg:py-8 `}>  Welcome to MicroBiz Media LLC. Your privacy is important to us.
                 This Privacy Policy explains how we collect, use,
                 disclose, and safeguard your information when you visit our website and use our services.</p>

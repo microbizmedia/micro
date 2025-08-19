@@ -1,7 +1,7 @@
 const TermsOfService = () => {
     return (
         <div id='terms-of-service-section' className='global-container z-40'>
-            <h1 className=' text-center pt-14 lg:pt-26 '> Terms Of Service  </h1>
+            <h1 className=' text-center pt-14 '> Terms Of Service  </h1>
             <p className={`sub-title tracking-wider text-center  m-auto py-6 lg:py-8 `}> Welcome to MicroBizMedia LLC! These Terms of Service (&quot;Terms&quot;) govern your use of our website,
                 services, and any interactions with us. By accessing or using our services, you agree to comply with and be bound by these Terms.
                 If you do not agree to these Terms, please do not use our services.</p>
