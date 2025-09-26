@@ -62,7 +62,7 @@ const Footer = () => {
               <li> <Link href='affiliate' > Affilliate Program </Link> </li>
               <li><Link href='contact'> Customer Service</Link> </li> 
               <li><Link href='privacy'>Privacy Policy</Link></li> 
-              <li><Link href='termsOfService'>Terms Of Service</Link></li>
+              <li><Link href='termsOfService'>Terms Of Service</Link></li> 
             </ul>
 
             <div className='flex flex-col gap-y-6 p-3'>
