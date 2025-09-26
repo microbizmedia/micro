@@ -60,7 +60,7 @@ const Footer = () => {
               <li className='text-2xl font-medium mb-2'>Legal</li>
               <li><Link href='FAQ' > FAQ </Link></li>
               <li> <Link href='affiliate' > Affilliate Program </Link> </li>
-              <li><Link href='contact'> Customer Service</Link> </li>
+              <li><Link href='contact'> Customer Service</Link> </li> 
               <li><Link href='privacy'>Privacy Policy</Link></li> 
               <li><Link href='termsOfService'>Terms Of Service</Link></li>
             </ul>
