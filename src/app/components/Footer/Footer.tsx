@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from "next/navigation";
+import ConsultationButton from '../constants/meeting-button';
 
 const Footer = () => {
   const pathname = usePathname();
@@ -11,9 +12,7 @@ const Footer = () => {
       {showRoutes.includes(pathname) ? (
         <div className='global-container text-center pt-4 mb-8 md:mb-12  z-40' data-aos='zoom-in'>
           <h2 className='pb-6'>Let&apos;s Start Your Story</h2>
-          <Link href='contact' className='button-micro  hover:border-violet-400' >
-            Start A Free Consultation
-          </Link>
+                            <ConsultationButton buttonName="Start a Free Consultation" className=' button-micro hover:border-violet-400 '/>
         </div>
       ) : <div className='h-[1px] w-[96%] m-auto bg-[#DBD6CF] opacity-25 ' />}
 
@@ -63,7 +62,7 @@ const Footer = () => {
               <li> <Link href='affiliate' > Affilliate Program </Link> </li>
               <li><Link href='contact'> Customer Service</Link> </li>
               <li><Link href='privacy'>Privacy Policy</Link></li>
-              <li><Link href='termsofservice'>Terms Of Service</Link></li>
+              <li><Link href='termsOfService'>Terms Of Service</Link></li>
             </ul>
 
             <div className='flex flex-col gap-y-6 p-3'>
@@ -78,6 +77,7 @@ const Footer = () => {
                   width={20}
                   height={20}
                   className='  size-10'
+                  loading='lazy'
                 />
                 <Image
                   src='/x_icon.png'
@@ -85,6 +85,7 @@ const Footer = () => {
                   width={20}
                   height={20}
                   className='  size-10'
+                  loading='lazy'
                 />
                 <Image
                   src='/instagram_icon.png'
@@ -92,6 +93,7 @@ const Footer = () => {
                   width={20}
                   height={20}
                   className='  size-10'
+                  loading='lazy'
                 />
               </div>
             </div>

@@ -80,6 +80,7 @@ p.sub-title{
 .button-micro {
   position: relative;
   z-index: 1;
+  cursor: pointer;
   display: inline-flex;
   background-color: #746eb8;
   overflow: hidden;
@@ -129,6 +130,9 @@ p.sub-title{
   background: radial-gradient(50% 50% at 100% 0%, #4D2190 0%, #4D2190 100%);
   filter: blur(125px);
 }
+
+
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -141,6 +145,10 @@ p.sub-title{
 ::-webkit-scrollbar-thumb:hover {
   background: #b8b8b8;
 }
+
+
+
+
 /* Pupup privacy bar */
 .pupup-close-symbol {
   display: flex;

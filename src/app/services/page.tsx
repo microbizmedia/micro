@@ -1,5 +1,7 @@
+'use client';
 import TitleMessage from '@/app/components/constants/title-message';
 import ServicesIcons from '@/app/components/constants/services-icons';
+import ConsultationButton from "../components/constants/meeting-button";
 import Link from 'next/link';
 
 const Services = () => {
@@ -36,7 +38,7 @@ const Services = () => {
             </div>
             <p className='sub-title text-center underline underline-offset-4 pt-2 text-sm'>Normally valued at $1599</p>
             <div className="flex items-center justify-center ">
-              <Link href='/contact' className='button w-full mx-4 inline-block bg-colorWhite  rounded-md mt-8 mb-2'> Book us &#x27a4;  </Link>
+              <ConsultationButton buttonName="Book us &#x27a4;" className="button w-full mx-4 inline-block bg-colorWhite  rounded-md mt-8 mb-2"/>
             </div>
             <p className='sub-title text-center pb-8 text-sm'>Terms of service Applies</p>
           </div>
@@ -67,7 +69,7 @@ const Services = () => {
             </div>
             <p className='sub-title text-center underline underline-offset-4 pt-2 text-sm'>Normally valued at $2499</p>
             <div className="flex items-center justify-center ">
-              <Link href='/contact' className='button w-full mx-4 inline-block bg-colorWhite text[-#0c1015] rounded-md mt-8 mb-2'> Book us &#x27a4;  </Link>
+              <ConsultationButton buttonName="Book us &#x27a4;" className="button w-full mx-4 inline-block bg-colorWhite  rounded-md mt-8 mb-2"/>
             </div>
             <p className='sub-title text-center pb-8 text-sm'>Terms of service Applies</p>
           </div>
