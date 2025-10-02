@@ -59,7 +59,7 @@ const PrivacyPupup = () => {
                             <Link
                              aria-label="Navigate to read privacy policy"
                                 onClick={handleDecline}
-                                href='privacy'
+                                href='privacy-policy'
                                 className="button w-full sm:w-auto"
                             >
                                 Read Privacy Policy

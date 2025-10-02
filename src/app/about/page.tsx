@@ -17,7 +17,7 @@ const About = () => {
                 <div className="flex justify-center flex-wrap gap-4 md:gap-10">
                     {/* Team Member 1 */}
                     <div className="flex flex-col items-center text-center space-y-2" data-aos='zoom-in'>
-                        <div className="w-40 h-40 rounded-full overflow-hidden shadow-lg border-[8px] border-white/10">
+                        <div className="w-40 h-40 rounded-full overflow-hidden shadow-lg ">
                             <img
                                 src="/members_images/martin_gyorgievski.png"
                                 alt="Team member 1"
@@ -33,7 +33,7 @@ const About = () => {
 
                     {/* Team Member 2 */}
                     <div className="flex flex-col items-center text-center space-y-2 " data-aos='zoom-in'>
-                        <div className="w-40 h-40 rounded-full overflow-hidden shadow-lg border-[8px] border-white/10">
+                        <div className="w-40 h-40 rounded-full overflow-hidden shadow-lg border-[8px] border-[#746eb8]/80">
                             <img
                                 src="/members_images/martin_stojmenovski.png"
                                 alt="Team member 2"
@@ -41,7 +41,7 @@ const About = () => {
                             />
                         </div>
                         <div>
-                            <h4 className="text-lg font-semibold">Martin Stoimenovski</h4>
+                            <h4 className="text-lg font-semibold">Martin Stojmenovski</h4>
                             <p className="text-sm text-[#746eb8]">Web Developer</p>
                             <p className="text-sm text-gray-500">Denver, CO</p>
                         </div>

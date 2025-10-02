@@ -2,7 +2,7 @@
 
 /* If you are using npm */
 // npm install @calcom/embed-react
-
+'use client';
 import { getCalApi } from "@calcom/embed-react";
 import React, { useEffect } from "react";
 export default function ConsultationButton(
