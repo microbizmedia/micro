@@ -1,4 +1,3 @@
-// src/app/api/apply/route.ts
 import { sendEmail } from '@/app/utils/mailer';
 
 export async function POST(req: Request) {
@@ -13,7 +12,6 @@ export async function POST(req: Request) {
     const message = formData.get('message')?.toString() || '';
     const resumeFile = formData.get('resume') as Blob | null;
 
-    // Required field check
     if (!candidateName || !email || !resumeFile) {
       return new Response(
         JSON.stringify({ error: 'Name, email and resume are required.' }),
@@ -21,7 +19,6 @@ export async function POST(req: Request) {
       );
     }
 
-    // File size check (5MB max)
     const fileSize = resumeFile.size;
     if (fileSize > 5 * 1024 * 1024) {
       return new Response(
@@ -30,15 +27,19 @@ export async function POST(req: Request) {
       );
     }
 
-    // Convert file to Node Buffer
     const buffer = Buffer.from(await resumeFile.arrayBuffer());
 
-    // Send email
+    // Determine filename without using 'any'
+    let filename = 'resume.pdf';
+    if ('name' in resumeFile && typeof (resumeFile as File).name === 'string') {
+      filename = (resumeFile as File).name;
+    }
+
     await sendEmail(
-      'martinstojmenovskim@gmail.com', // Replace with your email
+      'martinstojmenovskim@gmail.com',
       `New Job Application: ${positionName}`,
       `Name: ${candidateName}\nEmail: ${email}\nLocation: ${location}\nYears of Experience: ${yearsOfExperience}\nMessage: ${message}`,
-      { filename: (resumeFile as any).name || 'resume.pdf', content: buffer }
+      { filename, content: buffer }
     );
 
     return new Response(JSON.stringify({ message: 'Application sent successfully!' }), { status: 201 });
