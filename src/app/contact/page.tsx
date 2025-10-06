@@ -8,9 +8,7 @@ const CustomerService = () => {
   const [validationErrors, setValidationErrors] = useState<ValidationError[]>([]);
   const [formData, setFormData] = useState({
     clientName: '',
-    phone: '',
     email: '',
-    budget: '',
     message: '',
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -38,9 +36,7 @@ const CustomerService = () => {
     // Create FormData object for file upload
     const applicationData = new FormData();
     applicationData.append("clientName", formData.clientName);
-    applicationData.append("phone", formData.phone);  // Change "" to null
     applicationData.append("email", formData.email);
-    applicationData.append("budget", formData.budget); // Change "" to null
     applicationData.append("message", formData.message);
 
     try {
@@ -57,8 +53,6 @@ const CustomerService = () => {
         setFormData({
           clientName: "",  // Ensure no empty strings
           email: "",
-          phone: "",
-          budget: "",
           message: "",
         });
 
@@ -93,26 +87,17 @@ const CustomerService = () => {
           >
             <form className="w-full  rounded-lg px-4 lg:px-16 pt-8 md:pt-14 md:pb-4"
               onSubmit={handleSubmit}    >
-              <h2 className="mb-8">Let&apos;s Start Your Story</h2>
+              <h2 className="mb-8">Send Us a Message</h2>
 
               {/* Four placeholders */}
-              <div className="flex flex-wrap gap-4 lg:grid grid-rows-2 grid-cols-2">
+              <div className="flex flex-wrap gap-4 lg:grid grid-rows-1 grid-cols-2">
                 <input
                   name="clientName"
                   value={formData.clientName}
                   onChange={handleChange}
                   required
                   type="text" spellCheck="false"
-                  placeholder="Name*"
-                  className="bg-[#746eb8]/70   border border-gray-600 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-gray-600 w-full "
-                />
-                <input
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  type="tel"
-                  spellCheck="false"
-                  placeholder="Phone"
+                  placeholder="Name *"
                   className="bg-[#746eb8]/70   border border-gray-600 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-gray-600 w-full "
                 />
                 <input
@@ -122,17 +107,8 @@ const CustomerService = () => {
                   onChange={handleChange}
                   required
                   spellCheck="false"
-                  placeholder="Email*"
+                  placeholder="Email *"
                   className="bg-[#746eb8]/70   border border-gray-600 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-gray-600 w-full "
-                />
-                <input
-                  type="text"
-                  name="budget"
-                  value={formData.budget}
-                  onChange={handleChange}
-                  spellCheck="false"
-                  placeholder="Budget"
-                  className="bg-[#746eb8]/70  border border-gray-600 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-gray-600 w-full "
                 />
               </div>
 
@@ -143,7 +119,7 @@ const CustomerService = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  placeholder="What can MicroBiz do for you?*"
+                  placeholder="Questions, comments, or ideas? *"
                   className="bg-[#746eb8]/70 w-full border border-gray-600 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-gray-600"
                   rows={4}
                 ></textarea>

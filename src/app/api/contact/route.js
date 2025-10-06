@@ -17,17 +17,14 @@ export async function POST(req) {
       return NextResponse.json({ errors: result.array() }, { status: 400 });
     }
 
-    const { clientName, phone, email, budget, message } = matchedData(fakeReq);
+    const { clientName, email, message } = matchedData(fakeReq);
 
     const emailSent = await sendEmail(
       "martinstojmenovskim@gmail.com",
       `New Client Inquiry: ${clientName}`,
-      `
-        Client Details:
+      `Client Details:
         - Name: ${clientName}
         - Email: ${email}
-        - Phone: ${phone || "Not provided"}
-        - Budget: ${budget || "Not provided"}
         - Message: ${message}
       `
     );
