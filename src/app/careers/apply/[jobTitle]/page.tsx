@@ -88,7 +88,7 @@ const CareersAplications = () => {
 
 
         try {
-            const response = await fetch("https://backend-microbizmedia.vercel.app/apply", {
+            const response = await fetch("/api/apply", {
                 method: "POST",
                 body: applicationData,
             });
@@ -112,7 +112,13 @@ const CareersAplications = () => {
                 setFileName("Upload Resume*");
             } else {
                 setIsSubmitted(false);
-                setValidationErrors(result.errors || []);
+                if (result.errors) {
+                    setValidationErrors(result.errors);
+                } else if (result.error) {
+                    setValidationErrors([{ msg: result.error }]);
+                } else {
+                    setValidationErrors([{ msg: 'Unknown error occurred.' }]);
+                }
             }
         } catch (error) {
             console.error("Error submitting application:", error);
@@ -129,7 +135,7 @@ const CareersAplications = () => {
                     <TitleMessage
                         header="Join Our Team!"
                         paragraph="Apply today and take the next step in your career with us." />
-                    <div  data-aos='zoom-in' className=' overflow-hidden rounded-2xl  border-[12px] border-white/15  mb-8 lg:mb-12 ' >
+                    <div data-aos='zoom-in' className=' overflow-hidden rounded-2xl  border-[12px] border-white/15  mb-8 lg:mb-12 ' >
 
                         <form className="w-full  rounded-lg px-4 lg:px-16 pt-8 md:pt-14 md:pb-4" onSubmit={handleSubmit}>
                             <h3 className="mb-8">Apply for {jobTitle ? formattedJobTitle : "a Position"}</h3>
