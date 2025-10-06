@@ -44,7 +44,7 @@ export async function POST(req: Request) {
 
     return new Response(JSON.stringify({ message: 'Application sent successfully!' }), { status: 201 });
   } catch (err) {
-    console.error(err);
+    console.error('Email sending failed:', err);
     return new Response(JSON.stringify({ error: 'Server error' }), { status: 500 });
   }
 }
