@@ -1892,10 +1892,6 @@
     padding-top: calc(var(--spacing) * 10);
   }
 
-  .pt-12 {
-    padding-top: calc(var(--spacing) * 12);
-  }
-
   .pt-14 {
     padding-top: calc(var(--spacing) * 14);
   }
@@ -2184,12 +2180,6 @@
   @media (min-width: 48rem) {
     .md\:py-3 {
       padding-block: calc(var(--spacing) * 3);
-    }
-  }
-
-  @media (min-width: 48rem) {
-    .md\:pt-0 {
-      padding-top: calc(var(--spacing) * 0);
     }
   }
 
