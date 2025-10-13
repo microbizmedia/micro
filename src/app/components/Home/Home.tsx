@@ -50,7 +50,7 @@ const Hero = () => {
               height={300}
               alt='letter_image'
               className='float-animation  transform scale-x-150 px-3 md:px-0 pt-10 lg:pt-0'
-            />
+            /> 
           </a>
         </div>
 
