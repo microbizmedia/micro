@@ -30,7 +30,7 @@ const Hero = () => {
 
         <ServicesIcons title="What We Offer" />
 
-        <div id='consultation-window-section'
+        <section id='consultation-window-section'
           className=' overflow-hidden rounded-[40px]  bg-gradient-to-t from-[#0c1015] to-[#746eb8] max-w-[1024px] 
               flex flex-col-reverse mx-auto lg:flex-row mb-6 lg:mb-16  py-8  ' data-aos='zoom-in'
         >
@@ -52,7 +52,7 @@ const Hero = () => {
               className='float-animation  transform scale-x-150 px-3 md:px-0 pt-10 lg:pt-0'
             /> 
           </a>
-        </div>
+        </section>
 
 
         <Reviews />

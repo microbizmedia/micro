@@ -7,7 +7,7 @@ interface AboutUsIconsProps { title: string; }
 const AboutUsIcons: React.FC<AboutUsIconsProps> = ({ title }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   return (
-    <div className='mb-4 lg:mb-12'>
+    <div className='mb-8 lg:mb-12'>
       <h2 className=' mx-auto pb-4 lg:pb-8 lg:pt-8 max-w-[715px] text-center' data-aos="zoom-in" >{title}</h2>
       <div className={`flex flex-wrap justify-center gap-8   overflow-hidden transition-all duration-300 
         ${isExpanded ? "max-h-full" : "max-h-[610px]"}`}>

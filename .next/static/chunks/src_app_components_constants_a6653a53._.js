@@ -123,7 +123,7 @@ const CardIcon = (param)=>{
         "data-aos": "flip-left",
         "data-aos-delay": delay,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "h-[180px] w-[290px] bg-[#0c1015] border border-white/20   rounded-lg p-6 flex flex-col items-start justify-center",
+            className: "h-[180px] w-[290px] bg-[#0c1015] border border-white/10   rounded-lg p-6 flex flex-col items-start justify-center",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                     src: image,
@@ -307,17 +307,311 @@ __turbopack_context__.s({
     "default": ()=>__TURBOPACK__default__export__
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
 "use client";
 ;
+;
 const Reviews = ()=>{
+    _s();
+    const dummyReviews = [
+        {
+            reviewId: "1",
+            reviewer: {
+                displayName: "Emily Parker"
+            },
+            starRating: 5,
+            comment: "Absolutely loved the experience! Everything was smooth, quick, and professional. Highly recommend!",
+            createTime: "2025-01-12T10:30:00Z"
+        },
+        {
+            reviewId: "2",
+            reviewer: {
+                displayName: "James Wilson"
+            },
+            starRating: 4,
+            comment: "Great service overall. A few small hiccups, but the team handled everything really well.",
+            createTime: "2025-02-03T14:15:00Z"
+        },
+        {
+            reviewId: "3",
+            reviewer: {
+                displayName: "Sarah Johnson"
+            },
+            starRating: 5,
+            comment: "Professional, friendly, and super responsive. I’m thrilled with how everything turned out!",
+            createTime: "2025-02-25T09:50:00Z"
+        },
+        {
+            reviewId: "4",
+            reviewer: {
+                displayName: "Michael Smith"
+            },
+            starRating: 4,
+            comment: "Really good experience. Would definitely come back again.",
+            createTime: "2025-03-10T12:05:00Z"
+        },
+        {
+            reviewId: "5",
+            reviewer: {
+                displayName: "Ashley Brown"
+            },
+            starRating: 5,
+            comment: "Top-notch service! The staff went above and beyond to make sure everything was perfect.",
+            createTime: "2025-03-28T15:45:00Z"
+        },
+        {
+            reviewId: "6",
+            reviewer: {
+                displayName: "David Lee"
+            },
+            starRating: 3,
+            comment: "It was okay — not bad, but could’ve been a bit more organized.",
+            createTime: "2025-04-11T11:20:00Z"
+        },
+        {
+            reviewId: "7",
+            reviewer: {
+                displayName: "Jessica Miller"
+            },
+            starRating: 5,
+            comment: "Fantastic! Quick, easy, and exactly what I needed. Highly recommend to anyone.",
+            createTime: "2025-04-25T17:10:00Z"
+        },
+        {
+            reviewId: "8",
+            reviewer: {
+                displayName: "Ethan Davis"
+            },
+            starRating: 4,
+            comment: "Good overall. Communication could’ve been slightly better, but the final result was great.",
+            createTime: "2025-05-06T08:55:00Z"
+        },
+        {
+            reviewId: "9",
+            reviewer: {
+                displayName: "Olivia Taylor"
+            },
+            starRating: 5,
+            comment: "Amazing experience from start to finish! Everything exceeded my expectations.",
+            createTime: "2025-05-20T13:40:00Z"
+        },
+        {
+            reviewId: "10",
+            reviewer: {
+                displayName: "Benjamin Harris"
+            },
+            starRating: 2,
+            comment: "Not the best experience. Communication was slow, and it didn’t meet my expectations.",
+            createTime: "2025-06-03T16:25:00Z"
+        },
+        {
+            reviewId: "11",
+            reviewer: {
+                displayName: "Lucas Thompson"
+            },
+            starRating: 5,
+            comment: "Incredible work! Will definitely be coming back for future projects.",
+            createTime: "2025-07-07T10:45:00Z"
+        },
+        {
+            reviewId: "12",
+            reviewer: {
+                displayName: "Grace Anderson"
+            },
+            starRating: 4,
+            comment: "Solid service — they really care about their clients!",
+            createTime: "2025-07-21T13:25:00Z"
+        },
+        {
+            reviewId: "13",
+            reviewer: {
+                displayName: "Henry Clark"
+            },
+            starRating: 5,
+            comment: "Perfect execution and great communication all the way through.",
+            createTime: "2025-08-02T09:10:00Z"
+        },
+        {
+            reviewId: "14",
+            reviewer: {
+                displayName: "Ava Martinez"
+            },
+            starRating: 4,
+            comment: "Very professional! A few delays, but great final result.",
+            createTime: "2025-08-19T11:35:00Z"
+        },
+        {
+            reviewId: "15",
+            reviewer: {
+                displayName: "Jacob Robinson"
+            },
+            starRating: 5,
+            comment: "Exactly what I was looking for! 10/10 experience.",
+            createTime: "2025-09-03T15:00:00Z"
+        }
+    ];
+    // Handle responsive initial count
+    const [visibleCount, setVisibleCount] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(6);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Reviews.useEffect": ()=>{
+            const updateVisibleCount = {
+                "Reviews.useEffect.updateVisibleCount": ()=>{
+                    if (window.innerWidth < 640) {
+                        setVisibleCount(2); // Mobile
+                    } else {
+                        setVisibleCount(6); // Desktop
+                    }
+                }
+            }["Reviews.useEffect.updateVisibleCount"];
+            updateVisibleCount();
+            window.addEventListener("resize", updateVisibleCount);
+            return ({
+                "Reviews.useEffect": ()=>window.removeEventListener("resize", updateVisibleCount)
+            })["Reviews.useEffect"];
+        }
+    }["Reviews.useEffect"], []);
+    // Load more handler
+    const handleLoadMore = ()=>{
+        setVisibleCount((prev)=>Math.min(prev + 3, 15));
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        id: "reviews"
-    }, void 0, false, {
+        id: "reviews",
+        className: "flex flex-col items-center mb-6 lg:mb-16",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "columns-1 sm:columns-2 lg:columns-3 gap-4 gap-4 ",
+                children: dummyReviews.slice(0, visibleCount).map((review, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        "data-aos": "flip-left",
+                        "data-aos-delay": "".concat(100 * (index + 1)),
+                        className: "h-auto w-[325px] bg-[#0c1015] border border-white/10   rounded-xl p-7 flex flex-col mb-3 break-inside-avoid",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex flex-row justify-between w-full items-start",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex flex-row gap-3 items-start ",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                src: "/icon_images/reviews_google_icon.png",
+                                                alt: "Google Reviews Icon",
+                                                width: 40,
+                                                height: 40
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/components/constants/reviews.tsx",
+                                                lineNumber: 159,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                        className: "text-lg font-medium mb-[-3px]",
+                                                        children: review.reviewer.displayName
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/constants/reviews.tsx",
+                                                        lineNumber: 166,
+                                                        columnNumber: 19
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-[#746eb8] text-sm",
+                                                        children: new Date(review.createTime).toLocaleDateString("en-US", {
+                                                            year: "numeric",
+                                                            month: "short",
+                                                            day: "numeric"
+                                                        })
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/constants/reviews.tsx",
+                                                        lineNumber: 169,
+                                                        columnNumber: 19
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/app/components/constants/reviews.tsx",
+                                                lineNumber: 165,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/components/constants/reviews.tsx",
+                                        lineNumber: 158,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "font-medium",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "relative text-xs mr-[2px] bottom-[2px]",
+                                                children: "⭐"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/components/constants/reviews.tsx",
+                                                lineNumber: 179,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            review.starRating,
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-gray-600",
+                                                children: "/5"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/components/constants/reviews.tsx",
+                                                lineNumber: 181,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/components/constants/reviews.tsx",
+                                        lineNumber: 178,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/components/constants/reviews.tsx",
+                                lineNumber: 157,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "h-[1px] w-full mt-4 mb-5 bg-[#746eb8]"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/components/constants/reviews.tsx",
+                                lineNumber: 186,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                children: review.comment
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/components/constants/reviews.tsx",
+                                lineNumber: 189,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0))
+                        ]
+                    }, index, true, {
+                        fileName: "[project]/src/app/components/constants/reviews.tsx",
+                        lineNumber: 149,
+                        columnNumber: 11
+                    }, ("TURBOPACK compile-time value", void 0)))
+            }, void 0, false, {
+                fileName: "[project]/src/app/components/constants/reviews.tsx",
+                lineNumber: 147,
+                columnNumber: 7
+            }, ("TURBOPACK compile-time value", void 0)),
+            visibleCount < 15 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                onClick: handleLoadMore,
+                className: "button rounded-md px-[90px] mt-6",
+                children: "Load More ➤"
+            }, void 0, false, {
+                fileName: "[project]/src/app/components/constants/reviews.tsx",
+                lineNumber: 196,
+                columnNumber: 9
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
         fileName: "[project]/src/app/components/constants/reviews.tsx",
-        lineNumber: 6,
-        columnNumber: 9
+        lineNumber: 146,
+        columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
+_s(Reviews, "BZI6x2AZMvzlphSraauURFvpReQ=");
 _c = Reviews;
 const __TURBOPACK__default__export__ = Reviews;
 var _c;

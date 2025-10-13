@@ -123,7 +123,7 @@ const CardIcon = (param)=>{
         "data-aos": "flip-left",
         "data-aos-delay": delay,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "h-[180px] w-[290px] bg-[#0c1015] border border-white/20   rounded-lg p-6 flex flex-col items-start justify-center",
+            className: "h-[180px] w-[290px] bg-[#0c1015] border border-white/10   rounded-lg p-6 flex flex-col items-start justify-center",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                     src: image,
