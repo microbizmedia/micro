@@ -84,7 +84,7 @@ p.sub-title{
   display: inline-flex;
   background-color: #746eb8;
   overflow: hidden;
-  border-width: 1px;
+  border: 1px solid rgba(170, 167, 199, 0.7);
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 18px;

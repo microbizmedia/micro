@@ -28,15 +28,15 @@ const Hero = () => {
           button="See More"
         />
 
-        <ServicesIcons title="What We Offer" />
+        <ServicesIcons title="Our Services" />
 
         <section id='consultation-window-section'
           className=' overflow-hidden rounded-[40px]  bg-gradient-to-t from-[#0c1015] to-[#746eb8] max-w-[1024px] 
               flex flex-col-reverse mx-auto lg:flex-row mb-6 lg:mb-16  py-8  ' data-aos='zoom-in'
         >
           <div className='flex flex-col justify-center px-6 py-10 lg:pl-[76px] lg:max-w-[50%]'>
-            <h2>Our consultations are always free</h2>
-            <p className='lg:mt-6 lg:mb-10 mt-4 mb-8 text-base '>Give us an email and one of our agents will contact you as soon as we can.</p>
+            <h2>Book Your Free Consultation</h2>
+            <p className='lg:mt-6 lg:mb-10 mt-4 mb-8 text-base '>Choose a convenient time and let’s start planning your project together.</p>
             <StartAFreeConsultationButton buttonName="Free Consultation ➤" className=' button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md' />
           </div>
 
