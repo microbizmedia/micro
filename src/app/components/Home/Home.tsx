@@ -17,7 +17,7 @@ const Hero = () => {
       <div id='section-home' className='global-container z-20' >
 
         <TitleMessage
-          header='Your Digital Agency'
+          header='Your Digital Marketing Agency'
           paragraph='Take full control of your potential through our expert levels of design,
                 development and marketing for your brand and business.'
           className=' max-w-[600px] m-auto'

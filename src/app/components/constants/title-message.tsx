@@ -21,10 +21,7 @@ const TitleMessage = ({
 
             {showRoutes.includes(pathname) ? (
                 <div className=' flex flex-wrap justify-center gap-2 mb-6 lg:mb-10' data-aos="zoom-in">
-                    {/* <Link href='contact' className=' button-micro hover:border-violet-400 ' >
-                        Start a Free Consultation
-                    </Link> */}
-                    <StartAFreeConsultationButton buttonName="Start a Free Consultation" className=' button-micro hover:border-violet-400 '/>
+                    <StartAFreeConsultationButton buttonName="Start a Free Consultation" className=' button-micro '/>
                     <Link href='about' className='border-0 bg-transparent pt-[18px] pb-[16px] px-[30px] font-[500]'  >
                         Or read more about us &#x27a4;
                     </Link>

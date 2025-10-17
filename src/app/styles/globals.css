@@ -84,7 +84,7 @@ p.sub-title{
   display: inline-flex;
   background-color: #746eb8;
   overflow: hidden;
-  border: 1px solid rgba(170, 167, 199, 0.7);
+  border: 1px solid rgba(182, 180, 207, 0.8);
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 18px;
@@ -96,6 +96,9 @@ p.sub-title{
   transition-duration: 300ms;
   border-radius: 10px;
   font-weight: 500;
+}
+.button-micro:hover {
+  border-color: #f1f1f1;
 }
 .button-micro:before {
   content: " ";

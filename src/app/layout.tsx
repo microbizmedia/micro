@@ -23,9 +23,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MicroBiz Media",
-  description: "Web Design for Small Businesses",
-};
+   title: " MicroBiz Media | Denver Digital Marketing & Web Design Agency",
+  description: "Based in Denver, MicroBiz Media provides expert digital marketing, web design, and branding services for small businesses. Grow your online presence with us.",
+}
 
 export default function RootLayout({
   children,
