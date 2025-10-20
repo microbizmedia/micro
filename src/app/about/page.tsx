@@ -33,7 +33,7 @@ const About = () => {
 
                     {/* Team Member 2 */}
                     <div className="flex flex-col items-center text-center space-y-2 " data-aos='zoom-in'>
-                        <div className="w-40 h-40 rounded-full overflow-hidden shadow-lg border-[8px] border-[#746eb8]/80">
+                        <div className="w-40 h-40 rounded-full overflow-hidden shadow-lg border-[8px] border-[#5a49bb]/60">
                             <img
                                 src="/members_images/martin_stojmenovski.png"
                                 alt="Team member 2"
@@ -49,11 +49,11 @@ const About = () => {
 
                     {/* Team Member 3 */}
                     <div className="flex flex-col items-center text-center space-y-2" data-aos='zoom-in'>
-                        <div className="w-40 h-40 rounded-full overflow-hidden shadow-lg border-[8px] border-white/10">
+                        <div className="w-40 h-40 rounded-full overflow-hidden shadow-lg border-[8px] border-[#916eb8]/80">
                             <img
                                 src="/members_images/victor_doculevski.png"
                                 alt="Team member 3"
-                                className="w-full h-full object-cover object-[center_30%] bg-[#746eb8]"
+                                className="w-full h-full object-cover object-[center_0%] bg-[#746eb8]"
                             />
                         </div>
                         <div>
@@ -69,14 +69,14 @@ const About = () => {
                     mx-auto max-w-[1024px]  lg:flex-row  mb-8 md:mb-12' data-aos='zoom-in'  >
                 <div className='flex flex-col justify-center flex-1 bg-[#0c1015] px-3 py-10 lg:pl-16'>
                     <h2>Join Our Team!</h2>
-                    <Link href='/careers' className='my-6 lg:max-w-[90%] text-[#746eb8] cursor-pointer'>Explore Careers</Link>
+                    <Link href='/careers' className='my-4 lg:my-6 lg:max-w-[90%] text-[#746eb8] cursor-pointer'>Explore Careers</Link>
                     <p className=' lg:max-w-[90%]'>We’re a startup that values talent and creativity. Work from wherever you are — we care about results and making an impact together!</p>
 
                 </div>
                 <Image
                     src='/about_world_map.png'
                     alt='world-map'
-                    className='flex-1 pt-4 lg:pr-10 bg-[#0c1015]  object-contain object-center  max-h-[280px] lg:py-4 w-full'
+                    className='flex-1 pt-8 lg:pt-4 lg:pr-10 bg-[#0c1015]  object-contain object-center  max-h-[280px] lg:py-4 w-full'
                     loading="lazy"
                     height={280}
                     width={400}

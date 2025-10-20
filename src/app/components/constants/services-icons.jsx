@@ -7,16 +7,16 @@ const ServicesIcons = ({ title }) => {
   const [isDesktop, setIsDesktop] = useState(false)
 
   const services = [
-    { image: '/icon_images/service_website.png', altText: 'Website icon', text: 'Web Development', delay: '100' },
-    { image: '/icon_images/service_branding.png', altText: 'Palette icon', text: 'Branding & Design', delay: '200' },
-    { image: '/icon_images/service_hosting.png', altText: 'Hard disks icon', text: 'Hosting', delay: '300' },
-    { image: '/icon_images/service_strategy.svg', altText: 'Balance icon', text: 'Strategy', delay: '400' },
-    { image: '/icon_images/service_marketing.png', altText: 'Chart icon', text: 'Marketing', delay: '500' },
-    { image: '/icon_images/service_seo.png', altText: 'Magnifier loupe icon', text: 'SEO', delay: '600' },
+    { image: '/icon_images/service_website.png', altText: 'Website icon', text: 'Web Development',  },
+    { image: '/icon_images/service_branding.png', altText: 'Palette icon', text: 'Branding & Design', },
+    { image: '/icon_images/service_hosting.png', altText: 'Hard disks icon', text: 'Hosting',  },
+    { image: '/icon_images/service_strategy.svg', altText: 'Balance icon', text: 'Strategy',  },
+    { image: '/icon_images/service_marketing.png', altText: 'Chart icon', text: 'Marketing', },
+    { image: '/icon_images/service_seo.png', altText: 'Magnifier loupe icon', text: 'SEO', },
   ]
 
 
-    // Check screen width and update isDesktop
+  // Check screen width and update isDesktop
   useEffect(() => {
     const handleResize = () => {
       const lg = 1024 // Tailwind lg breakpoint
@@ -28,7 +28,7 @@ const ServicesIcons = ({ title }) => {
     return () => window.removeEventListener('resize', handleResize)
   }, [])
   // Mobile shows only 2 cards if not expanded
-    const visibleServices = isDesktop || isExpanded ? services : services.slice(0, 2)
+  const visibleServices = isDesktop || isExpanded ? services : services.slice(0, 2)
   return (
     <div className="mb-6 lg:mb-16">
       <h2 className="mx-auto pb-4 lg:pb-8 max-w-[715px] text-center" data-aos="zoom-in">
@@ -43,7 +43,7 @@ const ServicesIcons = ({ title }) => {
               image={service.image}
               altText={service.altText}
               text={service.text}
-              delay={service.delay}
+              delay={`${100 * (index + 1)}`}
             />
           ))}
         </div>
