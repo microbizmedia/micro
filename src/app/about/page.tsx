@@ -55,7 +55,7 @@ const About = () => {
                                 alt="Team member 3"
                                 className="w-full h-full object-cover object-[center_0%] bg-[#746eb8]"
                             />
-                        </div>
+                        </div> 
                         <div>
                             <h4 className="text-lg font-medium">Victor Dokulevski</h4>
                             <p className="text-sm text-[#746eb8]">Google Ads Specialist</p>
