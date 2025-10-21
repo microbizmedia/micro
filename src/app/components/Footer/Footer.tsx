@@ -12,7 +12,7 @@ const Footer = () => {
       {showRoutes.includes(pathname) ? (
         <div className='global-container text-center pt-4 mb-8 md:mb-12  z-40' data-aos='zoom-in'>
           <h2 className='pb-6'>Let&apos;s Start Your Story</h2>
-                            <ConsultationButton buttonName="Start a Free Consultation" className=' button-micro hover:border-violet-400 '/>
+          <ConsultationButton buttonName="Start a Free Consultation" className=' button-micro hover:border-violet-400 ' />
         </div>
       ) : <div className='h-[1px] w-[96%] m-auto bg-[#DBD6CF] opacity-25 ' />}
 
@@ -23,13 +23,13 @@ const Footer = () => {
             <Image src='/footer_bg.png' loading="lazy" alt='background image' width={2000} height={20}
               className='absolute z-10 bottom-[0%] w-full max-h-[110vh]  mx-auto left-1/2 -translate-x-1/2 ' />
             <Image src='/footer_graphic.png' loading="lazy" alt='footer graphic website images' width={1000} height={20}
-              className='relative w-[100%] bottom-[100%] bg-bottom z-20'/>
+              className='relative w-[100%] bottom-[100%] bg-bottom z-20' />
           </div>
         ) : null}
 
         {/* Footer Top */}
         <div className='global-container pt-8 '>
-          <div className='flex flex-wrap mb-4 md:justify-between'>
+          <div className='flex flex-wrap md:mb-4 md:justify-between'>
             <div className='flex flex-col mt-1 gap-y-4 p-3 md:max-w-60'>
               <Link href='/' className='inline-block'>
                 <Image
@@ -60,41 +60,57 @@ const Footer = () => {
               <li className='text-2xl font-medium mb-2'>Legal</li>
               <li><Link href='FAQ' > FAQ </Link></li>
               <li><Link href='affiliate' > Affilliate Program </Link> </li>
-              <li><Link href='contact'> Customer Service</Link> </li> 
-              <li><Link href='privacy-policy'>Privacy Policy</Link></li> 
-              <li><Link href='terms-of-service'>Terms Of Service</Link></li> 
+              <li><Link href='contact'> Customer Service</Link> </li>
+              <li><Link href='privacy-policy'>Privacy Policy</Link></li>
+              <li><Link href='terms-of-service'>Terms Of Service</Link></li>
             </ul>
 
-            <div className='flex flex-col gap-y-6 p-3'>
+            <div className='flex flex-col gap-y-4 p-3'>
 
               <h4 className='text-2xl text-bold mr-10'>
                 Social Links
               </h4>
-              <div className='flex justify-between'>
-                <Image
-                  src='/threads_icon.png'
-                  alt='threads icon'
-                  width={20}
-                  height={20}
-                  className='  size-10'
-                  loading='lazy'
-                />
-                <Image
-                  src='/x_icon.png'
-                  alt='x icon'
-                  width={20}
-                  height={20}
-                  className='  size-10'
-                  loading='lazy'
-                />
-                <Image
-                  src='/instagram_icon.png'
-                  alt='instagram icon'
-                  width={20}
-                  height={20}
-                  className='  size-10'
-                  loading='lazy'
-                />
+              <div className='flex justify-between gap-x-4'>
+
+                <a href='https://github.com/microbizmedia' target='_blank' rel='noopener noreferrer'
+                  className='flex flex-col   text-[#0c1015]'>
+                  <Image
+                    src='/fiverr_icon.png'
+                    alt='Fiverr icon'
+                    width={20}
+                    height={20}
+                    className=' size-12'
+                    loading='lazy'
+                  />
+                  Fiverr
+                </a>
+
+                <a href='https://github.com/microbizmedia' target='_blank' rel='noopener noreferrer'
+                  className='flex flex-col items-center  text-[#0c1015]'>
+                  <Image
+                    src='/linkedin_icon.png'
+                    alt='Linkedin icon'
+                    width={20}
+                    height={20}
+                    className='  size-12'
+                    loading='lazy'
+                  />
+                  LinkedIn
+                </a>
+
+                <a href='https://github.com/microbizmedia' target='_blank' rel='noopener noreferrer'
+                  className='flex flex-col items-center  text-[#0c1015]'>
+                  <Image
+                    src='/github_icon.png'
+                    alt='Github icon'
+                    width={20}
+                    height={20}
+                    className=' size-12'
+                    loading='lazy'
+                  />
+                  GitHub
+                </a>
+
               </div>
             </div>
           </div>

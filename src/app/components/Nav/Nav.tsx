@@ -29,31 +29,37 @@ const Navbar = ({ mobileMenu, setMobileMenu }: NavbarProps) => {
                 </ul>
 
                 <div className='dropdown-menu-social-media-icons'>
-                    <Image
-                        src='/threads_icon.png'
-                        alt='threads icon'
-                        width={30}
-                        height={20}
-                         className='  size-10'
-                        loading='lazy'
-                    />
-                    <Image
-                        src='/x_icon.png'
-                        alt='x icon'
-                        width={30}
-                        height={20}
-                         className='  size-10'
-                        loading='lazy'
-                    />
-                    <Image
-                        src='/instagram_icon.png'
-                        alt='instagram icon'
-                        width={30}
-                        height={20}
-                         className='  size-10'
-                        loading='lazy'
+                    <a href='https://github.com/microbizmedia' target='_blank' rel='noopener noreferrer'>
+                        <Image
+                            src='/fiverr_icon.png'
+                            alt='threads icon'
+                            width={30}
+                            height={20}
+                            className='  size-12'
+                            loading='lazy'
+                        />
+                    </a>
+                    <a href='https://github.com/microbizmedia' target='_blank' rel='noopener noreferrer'>
+                        <Image
+                            src='/linkedin_icon.png'
+                            alt='x icon'
+                            width={30}
+                            height={20}
+                            className='  size-12'
+                            loading='lazy'
+                        />
+                    </a>
+                    <a href='https://github.com/microbizmedia' target='_blank' rel='noopener noreferrer'>
+                        <Image
+                            src='/github_icon.png'
+                            alt='instagram icon'
+                            width={30}
+                            height={20}
+                            className='  size-12'
+                            loading='lazy'
 
-                    />
+                        />
+                    </a>
                 </div>
                 <div className={`mobile-menu-head ${mobileSubMenu && 'active'}`}>
                     <div onClick={handleMenu} className='mobile-menu-close lg:hidden rotate-[-90deg]'>
