@@ -21,15 +21,15 @@ const Navbar = ({ mobileMenu, setMobileMenu }: NavbarProps) => {
             <nav className={`menu-block ${mobileMenu && 'active'}`} id='append-menu-header'  >
 
                 <ul className={`site-menu-main`}>
-                    <li onClick={handleMenu}  > <Link href='/work' className='nav-link-item '> Our Work</Link> </li>
-                    <li onClick={handleMenu} > <Link href='/services' className='nav-link-item '>Services </Link></li>
-                    <li onClick={handleMenu}  > <Link href='/process' className='nav-link-item'> Process </Link></li>
-                    <li onClick={handleMenu} > <Link href='/careers' className='nav-link-item '>Careers</Link>  </li>
-                    <li onClick={handleMenu} > <Link href='/about' className='nav-link-item '> About Us </Link>  </li>
+                    <li onClick={handleMenu} > <Link href='/work' >Our Work</Link></li>
+                    <li onClick={handleMenu} > <Link href='/services' >Services </Link></li>
+                    <li onClick={handleMenu} > <Link href='/process' > Process </Link></li>
+                    <li onClick={handleMenu} > <Link href='/careers' >Careers</Link></li>
+                    <li onClick={handleMenu} > <Link href='/about' >About Us </Link></li>
                 </ul>
 
                 <div className='dropdown-menu-social-media-icons'>
-                    <a href='https://github.com/microbizmedia' target='_blank' rel='noopener noreferrer'>
+                    <a href='https://www.fiverr.com/microbiz_media?public_mode=true' target='_blank' rel='noopener noreferrer'>
                         <Image
                             src='/fiverr_icon.png'
                             alt='threads icon'

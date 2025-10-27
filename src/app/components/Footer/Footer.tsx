@@ -72,7 +72,7 @@ const Footer = () => {
               </h4>
               <div className='flex justify-between gap-x-4'>
 
-                <a href='https://github.com/microbizmedia' target='_blank' rel='noopener noreferrer'
+                <a href='https://www.fiverr.com/microbiz_media?public_mode=true' target='_blank' rel='noopener noreferrer'
                   className='flex flex-col   text-[#0c1015]'>
                   <Image
                     src='/fiverr_icon.png'
