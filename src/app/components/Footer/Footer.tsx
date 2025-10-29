@@ -85,7 +85,7 @@ const Footer = () => {
                   Fiverr
                 </a>
 
-                <a href='https://github.com/microbizmedia' target='_blank' rel='noopener noreferrer'
+                <a href='https://www.linkedin.com/in/martinstojmenovski/' target='_blank' rel='noopener noreferrer'
                   className='flex flex-col items-center  text-[#0c1015]'>
                   <Image
                     src='/linkedin_icon.png'

@@ -39,7 +39,7 @@ const Navbar = ({ mobileMenu, setMobileMenu }: NavbarProps) => {
                             loading='lazy'
                         />
                     </a>
-                    <a href='https://github.com/microbizmedia' target='_blank' rel='noopener noreferrer'>
+                    <a href='https://www.linkedin.com/in/martinstojmenovski/' target='_blank' rel='noopener noreferrer'>
                         <Image
                             src='/linkedin_icon.png'
                             alt='x icon'
